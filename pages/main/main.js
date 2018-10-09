@@ -22,10 +22,9 @@ Page({
   },
   onLoad: function (options){
     var num = 5;
-    console.log(options);
+    is_valid_click = true;
     var qs_cnt = options.type ? options.type*5 : 5;
     var subjectList = util.getQsList(qs_cnt);
-    console.log(subjectList);
     timerstamp = qs_cnt+5;
     // var lsit = [];
     // for(var i = 0 ; i < subjectList.length; i++){
@@ -35,6 +34,15 @@ Page({
     // }
     // subjectList = lsit;
     this.setData({ subjectList: subjectList, qs_cnt: qs_cnt, curSubject: subjectList[0]});
+  },
+  onHide: function () {
+    // 生命周期函数--监听页面隐藏
+    console.log("test1 onHide");
+  },
+  onUnload: function () {
+    // 生命周期函数--监听页面卸载
+    console.log("test1 onUnload");
+    this.showRes();
   },
   convertAns:function(res){
     var ret = '';
@@ -108,21 +116,26 @@ Page({
     this.setData({
       multi_disabled: true
     })
+
     var myAns = this.data.multiAns;//[2,3]
-    var stdAns = this.convertAns(this.data.curSubject.ans);//013
-    console.log(stdAns);
+    console.log(myAns);
+    var stdAns = this.convertAns(this.data.curSubject.ans)+"";//013
+    if(stdAns){
+      stdAns = stdAns.split('');//炸开数组
+      stdAns.sort(function (a, b) { return (a + '').localeCompare(b + '') });
+      console.log(stdAns);
+    }
+    var is_right = stdAns&&(myAns === stdAns) ? 1 :0;
+    var right_cnt = is_right ? this.data.right_cnt + 1 : this.data.right_cnt;
+    
     var rightAns = [];
-    var is_right = 1;
     for (var i = 0; i < 4; i++) {
       var sub_right = (stdAns.indexOf(i.toString()) != -1) ? 1 : 0;
       var row = { ischecked: (myAns.indexOf(i.toString()) != -1) ? 1 : -1, isright: sub_right};
       rightAns[i]=row;
-      if(!sub_right){
-        is_right = 0;
-      }
     }
-    var right_cnt = is_right ? this.data.right_cnt+1 : this.data.right_cnt;
-
+    
+    console.log(is_right);
     this.setData({
       rightAnsList: rightAns,
       multi_disabled:false,
@@ -138,6 +151,7 @@ Page({
     wx.showModal({
       title: '时间到',
       content: '总共' + this.data.qs_cnt + "题,您总共答对了" + this.data.right_cnt + "题",
+      showCancel:false,
       success: function (res) {
         wx.navigateBack({
           delta: 1,
@@ -147,7 +161,6 @@ Page({
     clearInterval(interval);
   },
   checkboxChange: function (e) {
-    console.log(e.detail.value);
     this.setData({ multiAns: e.detail.value});
   }
 })

@@ -4,7 +4,15 @@
 
 <view >
 <view class='sub_title'><view wx-if="{{curSubject.ans.length>1}}" >多选</view>{{curSubject.title}}</view>
-  <button wx:for='{{ curSubject.opts }}' wx:key='index' wx:for-item='opts' wx-if="{{curSubject.ans.length==1}}" class='{{(ischecked!=-1)?((ischecked==index)?(isright?"btn_right":"btn_error"):((curSubject.ans==index)?"btn_right":"btn_blk")):"btn_blk"}}' bindtap='chooseAnswer' data-idx="{{index}}">{{opts}}</button>
+  <!-- <button wx:for='{{ curSubject.opts }}' wx:key='index' wx:for-item='opts' wx-if="{{curSubject.ans.length==1}}" class='{{(ischecked!=-1)?((ischecked==index)?(isright?"btn_right":"btn_error"):((curSubject.ans==index)?"btn_right":"btn_blk")):"btn_blk"}}' bindtap='chooseAnswer' data-idx="{{index}}">{{opts}}</button> -->
+
+  <radio-group wx-if="{{curSubject.ans.length==1}}" class="radio-group" bindchange="radioChange">
+    <view>
+      <label class="radio" wx:for="{{curSubject.opts}}" wx:key='index' wx:for-item='opts' style='display:block'>
+        <radio value="{{opts.value}}" checked="{{opts.checked}}"/>{{opts.title}}
+      </label>
+    </view>
+</radio-group>
 
   <view wx-if="{{curSubject.ans.length>1}}" >
       <checkbox-group class="chk_group" bindchange="checkboxChange">

@@ -1,10 +1,12 @@
-
-
 const util = require('../../utils/util.js')
+import Watch  from '../../utils/watch'
+
+let watch;
 var interval;
 var ans_interval;
 var is_valid_click = true;
 var timerstamp = 10;
+
 
 Page({
   data: {
@@ -18,22 +20,60 @@ Page({
     rightAnsList: [{ isright: 0, ischecked: -1 }, { isright: 0, ischecked: -1 }, { isright: 0, ischecked: -1 }, { isright: 0, ischecked: -1 }],
     multi_disabled:false,
     qs_cnt:0,
-    right_cnt:0
+    right_cnt:0,
+    isUnderGoing:false
   },
   onLoad: function (options){
     var num = 5;
     is_valid_click = true;
     var qs_cnt = options.type ? options.type*5 : 5;
     var subjectList = util.getQsList(qs_cnt);
-    timerstamp = qs_cnt+5;
-    // var lsit = [];
-    // for(var i = 0 ; i < subjectList.length; i++){
-    //   if(subjectList[i]['ans'].length>1){
-    //     lsit.push(subjectList[i]);
-    //   }
-    // }
-    // subjectList = lsit;
+    timerstamp = 10000;
+    // qs_cnt+5;
+
+    watch = new Watch(this);
+    var lsit = [];
+    for(var i = 0 ; i < subjectList.length; i++){
+      if(subjectList[i]['ans'].length==1){
+        lsit.push(subjectList[i]);
+      }
+    }
+    subjectList = lsit;
+    console.log(subjectList);
     this.setData({ subjectList: subjectList, qs_cnt: qs_cnt, curSubject: subjectList[0]});
+    console.log(this.data.isUnderGoing);
+    watch.setData({
+      isUnderGoing:true
+    })
+  },
+  watch: {
+    isUnderGoing: function (newVal, oldVal) {
+      console.log('new: %s, old: %s', newVal, oldVal);
+      var pages = getCurrentPages() // 获取页面栈
+      var prevPage = pages[pages.length - 2] // 上一个页面
+      
+      if (newVal==true&&oldVal==false){//说明开始了答题
+        prevPage.setData({
+          canShow: false
+        })
+      }else if(newVal==false&&oldVal==true){//说明结束了答题
+        prevPage.setData({
+          canShow: true
+        })
+      }
+    }
+  },
+  radioChange:function(evt){
+    console.log(evt);
+    var val = evt.detail.value;
+    var curSub = this.data.curSubject;
+    if(val==curSub.ans){
+      //答对了
+
+    }else{
+      //答错了
+    }
+
   },
   onHide: function () {
     // 生命周期函数--监听页面隐藏
@@ -42,7 +82,23 @@ Page({
   onUnload: function () {
     // 生命周期函数--监听页面卸载
     console.log("test1 onUnload");
-    this.showRes();
+    var pages = getCurrentPages() // 获取页面栈
+    console.log(pages)
+    var prevPage = pages[pages.length - 2] // 上一个页面
+    console.log(prevPage.data.canShow);
+    var canShow = prevPage.data.canShow;
+    if(!canShow){
+      wx.showModal({
+        title: '您确定退出当前游戏吗?',
+        success: function (res) {
+          console.log(res);
+          if (res.confirm) {
+            return;
+          }
+        }
+      })
+      // this.showRes();
+    }
   },
   convertAns:function(res){
     var ret = '';
@@ -69,6 +125,7 @@ Page({
     var right_ans = this.convertAns(this.data.curSubject.ans);
     var isright = ischecked == right_ans ? true : false;
     var right_cnt = isright ? this.data.right_cnt+1 : this.data.right_cnt;
+    console.log(isright);
     this.setData({ ischecked: ischecked, isright: isright,right_cnt:right_cnt});
 
     ans_interval = setInterval(function(){
@@ -118,12 +175,10 @@ Page({
     })
 
     var myAns = this.data.multiAns;//[2,3]
-    console.log(myAns);
     var stdAns = this.convertAns(this.data.curSubject.ans)+"";//013
     if(stdAns){
       stdAns = stdAns.split('');//炸开数组
       stdAns.sort(function (a, b) { return (a + '').localeCompare(b + '') });
-      console.log(stdAns);
     }
     var is_right = stdAns&&(myAns === stdAns) ? 1 :0;
     var right_cnt = is_right ? this.data.right_cnt + 1 : this.data.right_cnt;
@@ -148,16 +203,23 @@ Page({
     }.bind(this), 500)
   },
   showRes:function(){
-    wx.showModal({
-      title: '时间到',
-      content: '总共' + this.data.qs_cnt + "题,您总共答对了" + this.data.right_cnt + "题",
-      showCancel:false,
-      success: function (res) {
-        wx.navigateBack({
-          delta: 1,
-        })
-      }
-    })
+    var pages = getCurrentPages();
+    var len = pages.length;
+    if (pages && pages[len-1].route.indexOf("main/main")!=-1){
+      wx.showModal({
+        title: '时间到',
+        content: '总共' + this.data.qs_cnt + "题,您总共答对了" + this.data.right_cnt + "题",
+        showCancel: false,
+        success: function (res) {
+          wx.navigateBack({
+            delta: 1,
+          })
+        }
+      })
+      this.setData({
+        isUnderGoing:false
+      })
+    }
     clearInterval(interval);
   },
   checkboxChange: function (e) {

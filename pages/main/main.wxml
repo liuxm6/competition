@@ -8,7 +8,7 @@
 
   <radio-group wx-if="{{curSubject.ans.length==1}}" class="radio-group" bindchange="radioChange">
     <view>
-      <label class="radio" wx:for="{{curSubject.opts}}" wx:key='index' wx:for-item='opts' style='display:block'>
+      <label class='{{(ischecked!=-1)?((ischecked==index)?(isright?"btn_right":"btn_error"):((curSubject.ans==index)?"btn_right":"btn_blk")):"btn_blk"}}' wx:for="{{curSubject.opts}}" wx:key='index' wx:for-item='opts' style='display:block'>
         <radio value="{{opts.value}}" checked="{{opts.checked}}"/>{{opts.title}}
       </label>
     </view>

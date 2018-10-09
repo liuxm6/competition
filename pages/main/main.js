@@ -31,7 +31,7 @@ Page({
     timerstamp = 10000;
     // qs_cnt+5;
 
-    watch = new Watch(this);
+    // watch = new Watch(this);
     var lsit = [];
     for(var i = 0 ; i < subjectList.length; i++){
       if(subjectList[i]['ans'].length==1){
@@ -42,37 +42,71 @@ Page({
     console.log(subjectList);
     this.setData({ subjectList: subjectList, qs_cnt: qs_cnt, curSubject: subjectList[0]});
     console.log(this.data.isUnderGoing);
-    watch.setData({
-      isUnderGoing:true
-    })
+    // watch.setData({
+    //   isUnderGoing:true
+    // })
   },
-  watch: {
-    isUnderGoing: function (newVal, oldVal) {
-      console.log('new: %s, old: %s', newVal, oldVal);
-      var pages = getCurrentPages() // 获取页面栈
-      var prevPage = pages[pages.length - 2] // 上一个页面
+  // watch: {
+  //   isUnderGoing: function (newVal, oldVal) {
+  //     console.log('new: %s, old: %s', newVal, oldVal);
+  //     var pages = getCurrentPages() // 获取页面栈
+  //     var prevPage = pages[pages.length - 2] // 上一个页面
       
-      if (newVal==true&&oldVal==false){//说明开始了答题
-        prevPage.setData({
-          canShow: false
-        })
-      }else if(newVal==false&&oldVal==true){//说明结束了答题
-        prevPage.setData({
-          canShow: true
-        })
-      }
-    }
+  //     if (newVal==true&&oldVal==false){//说明开始了答题
+  //       prevPage.setData({
+  //         canShow: false
+  //       })
+  //     }else if(newVal==false&&oldVal==true){//说明结束了答题
+  //       prevPage.setData({
+  //         canShow: true
+  //       })
+  //     }
+  //   }
+  // },
+  chooseAnswer: function (opts) {
+    // if (is_valid_click == false) {
+    //   return;
+    // }
+    // is_valid_click = false;
+    // var ischecked = opts.target.dataset.idx;
+    // var right_ans = this.convertAns(this.data.curSubject.ans);
+    // var isright = ischecked == right_ans ? true : false;
+    // var right_cnt = isright ? this.data.right_cnt + 1 : this.data.right_cnt;
+    // console.log(isright);
+    // this.setData({ ischecked: ischecked, isright: isright, right_cnt: right_cnt });
+
+    // ans_interval = setInterval(function () {
+    //   this.restart();
+    //   clearInterval(ans_interval);
+    // }.bind(this), 500)
   },
   radioChange:function(evt){
     console.log(evt);
+    if (is_valid_click == false) {
+      return;
+    }
+    is_valid_click = false;
+
+    var ischecked = this.convertAns(evt.detail.value);
+    console.log(ischecked);
     var val = evt.detail.value;
     var curSub = this.data.curSubject;
-    if(val==curSub.ans){
+    var isright = val == curSub.ans ? true : false;
+    if(isright){
       //答对了
 
     }else{
       //答错了
     }
+
+    
+    var right_cnt = isright ? this.data.right_cnt + 1 : this.data.right_cnt;
+    this.setData({ ischecked: ischecked, isright: isright, right_cnt: right_cnt });
+
+    // ans_interval = setInterval(function () {
+    //   this.restart();
+    //   clearInterval(ans_interval);
+    // }.bind(this), 500)
 
   },
   onHide: function () {
@@ -115,23 +149,22 @@ Page({
       ret += '3';
     }
     return ret;
-  },
-  chooseAnswer:function(opts){
-    if (is_valid_click == false){
-      return;
+  }, 
+  convertAnsToIdx: function (res) {
+    var ret = '';
+    if (res.indexOf('0') != -1) {
+      ret += 'A';
     }
-    is_valid_click = false;
-    var ischecked = opts.target.dataset.idx;
-    var right_ans = this.convertAns(this.data.curSubject.ans);
-    var isright = ischecked == right_ans ? true : false;
-    var right_cnt = isright ? this.data.right_cnt+1 : this.data.right_cnt;
-    console.log(isright);
-    this.setData({ ischecked: ischecked, isright: isright,right_cnt:right_cnt});
-
-    ans_interval = setInterval(function(){
-      this.restart();
-      clearInterval(ans_interval);
-    }.bind(this),500)
+    if (res.indexOf('1') != -1) {
+      ret += 'B';
+    }
+    if (res.indexOf('2') != -1) {
+      ret += 'C';
+    }
+    if (res.indexOf('3') != -1) {
+      ret += 'D';
+    }
+    return ret;
   },
   qsTimer:function(){
     var totalSecond =timerstamp;

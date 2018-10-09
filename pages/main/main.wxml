@@ -1,0 +1,32 @@
+<view class="countDownTimeView countDownAllView timer_countdown" >
+  <view class="voteText countDownTimeText">{{countDownSecond}}</view>
+ </view> 
+
+<view >
+<view class='sub_title'><view wx-if="{{curSubject.ans.length>1}}" >多选</view>{{curSubject.title}}</view>
+  <button wx:for='{{ curSubject.opts }}' wx:key='index' wx:for-item='opts' wx-if="{{curSubject.ans.length==1}}" class='{{(ischecked!=-1)?((ischecked==index)?(isright?"btn_right":"btn_error"):((curSubject.ans==index)?"btn_right":"btn_blk")):"btn_blk"}}' bindtap='chooseAnswer' data-idx="{{index}}">{{opts}}</button>
+
+  <view wx-if="{{curSubject.ans.length>1}}" >
+      <checkbox-group class="chk_group" bindchange="checkboxChange">
+            <label class="checkbox" wx:for='{{ curSubject.opts }}' wx:key='index' wx:for-item='opts' class='{{(rightAnsList[index].isright)?"chk_right":((rightAnsList[index].ischecked==1)?"chk_err":"chk_blk")}}'>
+            <checkbox value="{{opts.value}}" checked="{{opts.checked}}"/>{{opts.title}}
+        </label>
+      </checkbox-group>
+  </view> 
+
+   <button wx-if="{{curSubject.ans.length>1}}" bindtap='mulClick' class='btn_blk' style='text-align:center;' disabled='{{multi_disabled}}'>确定</button>  
+
+  <!-- <button wx:for='{{ curSubject.ansList }}' wx:key='index' wx:for-item='ansList' wx-if="{{curSubject.type=='single'}}" class='{{(ischecked!=-1)?((ischecked==index)?(isright?"btn_right":"btn_error"):((curSubject.ans==index)?"btn_right":"btn_blk")):"btn_blk"}}' bindtap='chooseAnswer' data-idx="{{index}}">{{ansList}}</button>
+
+  <view wx-if="{{curSubject.type=='multiple'}}" >
+      <checkbox-group class="chk_group" bindchange="checkboxChange">
+            <label class="checkbox" wx:for='{{ curSubject.ansList }}' wx:key='index' wx:for-item='ansList' class='{{(rightAnsList[index].isright)?"chk_right":((rightAnsList[index].ischecked==1)?"chk_err":"chk_blk")}}'>
+            <checkbox value="{{ansList.value}}" checked="{{ansList.checked}}"/>{{ansList.title}}
+        </label>
+      </checkbox-group>
+  </view> -->
+
+ <!-- <button wx-if="{{curSubject.type=='multiple'}}" bindtap='mulClick' class='btn_blk' style='text-align:center;' disabled='{{multi_disabled}}'>确定</button>   -->
+
+
+</view>

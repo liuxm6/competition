@@ -27,8 +27,11 @@ Page({
       url: '../main/main?step=p1',
     })
   },
-  onLoad: function () {
-
+  onLoad: function (options) {
+    console.log(options);
+    if(options.type=='forward'){
+      //根据当前的options.step改变前端显示，当前可选择哪个关卡
+    }
     // 一是会将按钮拖出屏幕边缘，
     // 二是按钮始终在鼠标右下方。
     // 获取屏幕宽高

@@ -7,7 +7,7 @@
     <view class='sub_title'>
       <view style='position:relative;width:320rpx;margin: 0 auto;height:78rpx;color:white;display:inline-block'>
         <image src='../../assets/img/title.png' style='width:100%;height:inherit;'></image>
-        <view style='position:absolute;top:12rpx;width:100%;left:0rpx;font-size:36rpx;'>
+        <view style='position:absolute;top:0rpx;width:100%;left:0rpx;font-size:36rpx;line-height:78rpx'>
           <text wx-if="{{curSubject.ans.length>1}}">多选</text>
           <text wx-if="{{curSubject.ans.length==1}}">单选</text>题 {{idx}}/{{qs_cnt}}</view>
       </view>

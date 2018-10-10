@@ -13,7 +13,8 @@ Page({
     ballTop: 0,
     ballLeft: 0,
     screenHeight: 0,
-    screenWidth: 0
+    screenWidth: 0,
+    canShow:false
   },
   //事件处理函数
   bindViewTap: function() {
@@ -34,7 +35,7 @@ Page({
     var _this = this;
     wx.getSystemInfo({
       success: function (res) {
-        console.log(res);
+        // console.log(res);
         _this.setData({
           screenHeight: res.windowHeight,
           screenWidth: res.windowWidth,
@@ -103,5 +104,17 @@ Page({
   },
   onPullDownRefresh:function(){
     console.log('222222222222');
+  },
+  onShow:function(){
+    console.log("onshow");
+    console.log(this.data.canShow);
+    var pages = getCurrentPages();
+    var len = pages.length;
+    console.log(pages[len-1]);
+    // if(!this.data.canShow){
+    //   wx.navigateTo({
+    //     url: '../main/main?type=2',
+    //   })
+    // }
   }
 })

@@ -81,7 +81,6 @@ Page({
     // }.bind(this), 500)
   },
   radioChange:function(evt){
-    console.log(evt);
     if (is_valid_click == false) {
       return;
     }
@@ -92,6 +91,7 @@ Page({
     var val = evt.detail.value;
     var curSub = this.data.curSubject;
     var isright = val == curSub.ans ? true : false;
+    console.log(isright);
     if(isright){
       //答对了
 
@@ -103,10 +103,10 @@ Page({
     var right_cnt = isright ? this.data.right_cnt + 1 : this.data.right_cnt;
     this.setData({ ischecked: ischecked, isright: isright, right_cnt: right_cnt });
 
-    // ans_interval = setInterval(function () {
-    //   this.restart();
-    //   clearInterval(ans_interval);
-    // }.bind(this), 500)
+    ans_interval = setInterval(function () {
+      this.restart();
+      clearInterval(ans_interval);
+    }.bind(this), 500)
 
   },
   onHide: function () {

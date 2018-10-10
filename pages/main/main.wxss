@@ -15,9 +15,9 @@
   margin-left: 10px;margin-right: 10px;
 }
 
-.btn_blk{
-  background: white;
-  border: 1px solid #f2f2f2;
+ .btn_blk{
+  /* background: white; */
+  /* border: 1px solid #f2f2f2; */
   border-radius: 5px;
   width: 75%;
   line-height: 50px;
@@ -26,29 +26,29 @@
   height: auto;
 }
 
-/* .btn_right{
+.btn_right{
   border-radius: 5px;
   width: 75%;
   line-height: 50px;
   padding-left: 5px;
   margin: 15px auto;
   height: auto;
-  background: #a3d436;
-  border: 1px solid #a3d436;
-  color: white;
-} */
+  /* background: #a3d436; */
+  /* border: 1px solid #a3d436; */
+  color: #a3d436;
+} 
 
-/* .btn_error{
+ .btn_error{
   border-radius: 5px;
   width: 75%;
   line-height: 50px;
   padding-left: 5px;
   margin: 15px auto;
   height: auto;
-  background: #fe8103;
-  border: 1px solid #fe8103;
-  color: white;
-} */
+  /* background: #fe8103; */
+  /* border: 1px solid #fe8103; */
+  color: #fe8103;
+} 
 
 .chk_group{
   margin-left: 10px;margin-right: 10px;font-size: 14px;
@@ -70,6 +70,8 @@
   background: #fe8103;border: 1px solid #fe8103;padding: 5px 5px;margin-top:10px;display:block;border-radius:5px;
 }
 
+
+/* radio  */
 .btn_right radio .wx-radio-input.wx-radio-input-checked::before{
    background-color:white; 
     border: 2rpx solid #f2f2f2;
@@ -91,13 +93,10 @@
 
 .btn_error radio .wx-radio-input.wx-radio-input-checked::before,.btn_right radio .wx-radio-input.wx-radio-input-checked::before{
    border-radius: 50%;
-   width: 40rpx; 
-   height: 40rpx; 
+   width: 50rpx; 
+   height: 50rpx; 
    text-align: center;
    color:transparent; /* 对勾颜色 白色 */
-   /* font-size:20rpx; */
-   /* transform:translate(-50%, -50%) scale(1);
-   -webkit-transform:translate(-50%, -50%) scale(1); */
 }
 
 radio .wx-radio-input{

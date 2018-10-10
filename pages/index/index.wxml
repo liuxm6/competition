@@ -1,19 +1,15 @@
 <!--index.wxml-->
-<!-- <view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
+<view class="container" style="background-image: url('../../assets/img/bg.jpg')" bindtap='goMain'>
+  <view class="ui-top" style="background-image: url('../../assets/img/ui/t@2x.png')">
+    <view class="userinfo-grade">{{userData.grade}}</view>
+    <view class="userinfo-exp">{{userData.exp.cur}}/{{userData.exp.limit}}</view>
+    <view class="userinfo">
+      <image class="userinfo-avatar" background-size="cover" src='{{userInfo.avatarUrl}}'></image>
+    </view>
+    <view class="userinfo-nickname">{{userInfo.nickName}}</view>
+    <view class="userinfo-coin">{{userData.coin}}</view>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+  <view class="ui-foot" style="background-image: url('../../assets/img/ui/b@2x.png')">
+    <view class="userinfo-strength">{{userData.strength.cur}}/{{userData.strength.limit}}</view>
   </view>
-</view> -->
-
-<view class="warp" style="background-image: url('../../assets/img/bg.jpg')" bindtap='goMain'>
-
 </view>
-
-<!-- <view id="id" bindtouchstart='handletouchstart' bindtouchmove="handletouchmove" class='demo' style='top:{{ballTop}}px; left: {{ballLeft}}px'></view> -->

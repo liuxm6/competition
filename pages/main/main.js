@@ -35,12 +35,25 @@ Page({
     // watch = new Watch(this);
     var lsit = [];
     for(var i = 0 ; i < subjectList.length; i++){
-      if(subjectList[i]['ans'].length==1){
+      if(subjectList[i]['ans'].length>1){
+        for (var j = 0; j < subjectList[i].opts.length;j++){
+          var values = subjectList[i].opts[j];
+          if(values.value==0){
+            values.options="A"
+          } else if (values.value ==1) {
+            values.options = "B"
+          } else if (values.value == 2) {
+            values.options = "C"
+          } else if (values.value == 3) {
+            values.options = "D"
+          }
+        }
         lsit.push(subjectList[i]);
       }
     }
     subjectList = lsit;
     console.log(subjectList);
+    
     this.setData({ subjectList: subjectList, qs_cnt: qs_cnt, curSubject: subjectList[0]});
     console.log(this.data.isUnderGoing);
     // watch.setData({
@@ -91,7 +104,6 @@ Page({
     var val = evt.detail.value;
     var curSub = this.data.curSubject;
     var isright = val == curSub.ans ? true : false;
-    console.log(isright);
     if(isright){
       //答对了
 
@@ -231,10 +243,10 @@ Page({
       right_cnt:right_cnt
     })
 
-    ans_interval = setInterval(function () {
-      this.restart();
-      clearInterval(ans_interval);
-    }.bind(this), 500)
+    // ans_interval = setInterval(function () {
+    //   this.restart();
+    //   clearInterval(ans_interval);
+    // }.bind(this), 500)
   },
   showRes:function(){
     var pages = getCurrentPages();

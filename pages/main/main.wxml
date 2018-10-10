@@ -35,7 +35,9 @@
 
   <view wx-if="{{curSubject.ans.length>1}}" >
       <checkbox-group class="chk_group" bindchange="checkboxChange">
-            <label class="checkbox" wx:for='{{ curSubject.opts }}' wx:key='index' wx:for-item='opts' class='{{(rightAnsList[index].isright)?"chk_right":((rightAnsList[index].ischecked==1)?"chk_err":"chk_blk")}}'>
+            <label style="position:relative;" class="checkbox" wx:for='{{ curSubject.opts }}' wx:key='index' wx:for-item='opts' class='{{(rightAnsList[index].isright)?"chk_right":((rightAnsList[index].ischecked==1)?"chk_err":"chk_blk")}}'>
+            <text class='{{(rightAnsList[index].isright)?"":((rightAnsList[index].ischecked==1)?"error":"")}}'></text>
+            <text style='color:{{(rightAnsList[index].isright)?"":((rightAnsList[index].ischecked==1)?"red":"")}};position:absolute;left:23rpx;top:15rpx;font-size:32rpx;z-index:1;'>{{opts.options}}</text>
             <checkbox value="{{opts.value}}" checked="{{opts.checked}}"/>{{opts.title}}
         </label>
       </checkbox-group>

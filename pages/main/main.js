@@ -1,4 +1,5 @@
 const util = require('../../utils/util.js')
+const steps = require('../../utils/steps.js')
 import Watch  from '../../utils/watch'
 
 let watch;
@@ -26,14 +27,11 @@ Page({
     step:0
   },
   onLoad: function (options){
-    var num = 5;
+    var step = steps[options.step];
     is_valid_click = true;
-    var qs_cnt = options.step ? options.step*5 : 5;
+    var qs_cnt = step.limitSubjectNumber; //题目数量
+    timerstamp = step.limitTime;          //限制时间
     var subjectList = util.getQsList(qs_cnt);
-    timerstamp = 100;
-    // qs_cnt+5;
-
-    // watch = new Watch(this);
     var lsit = [];
     for(var i = 0 ; i < subjectList.length; i++){
       if(subjectList[i]['ans'].length>1){

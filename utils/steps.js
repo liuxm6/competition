@@ -1,5 +1,5 @@
 // 关卡
-var passOpt = {
+var steps = {
   p1:{
     title:'初级',              //标题
     limitTime:30,             //限时
@@ -38,4 +38,4 @@ var passOpt = {
     awardExp: 20,
   },
 };
-module.exports = passOpt;
+module.exports = steps;

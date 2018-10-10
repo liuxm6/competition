@@ -11,7 +11,7 @@
 .clolor_blue {
   color: blue;
   position: absolute;
-  left: 21rpx;
+  left: 23rpx;
   top: 15rpx;
   font-size: 32rpx;
   z-index: 1;
@@ -20,7 +20,7 @@
 .color_red {
   color: red !important;
   position: absolute;
-  left: 23rpx;
+  /* left: 23rpx; */
   top: 15rpx;
   font-size: 32rpx;
   z-index: 1;
@@ -43,8 +43,8 @@
   position: absolute;
   z-index: 100;
   color: #1d68a1;
-  left: 10rpx;
-  top: 2rpx;
+  left: 14rpx;
+  top: 4rpx;
 }
 
 /* 如果选对 */
@@ -215,8 +215,8 @@ checkbox .wx-checkbox-input.wx-checkbox-input-checked::before {
   transform: rotate(45deg);
   display: inline-block;
   z-index: 2;
-  left: 16rpx;
-  top: 28rpx;
+  left: 17rpx;
+  top: 34rpx;
   color: red;
 }
 

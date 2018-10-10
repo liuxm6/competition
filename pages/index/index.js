@@ -24,7 +24,7 @@ Page({
   },
   goMain:function(){
     wx.reLaunch({
-      url: '../main/main?step=2',
+      url: '../main/main?step=1',
     })
   },
   onLoad: function () {

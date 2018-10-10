@@ -60,7 +60,7 @@ Page({
     console.log(subjectList);
     
     this.setData({ subjectList: subjectList, qs_cnt: qs_cnt, curSubject: subjectList[0],step:options.step});
-    console.log(this.data.isUnderGoing);
+    // console.log(this.data.isUnderGoing);
     // watch.setData({
     //   isUnderGoing:true
     // })
@@ -243,19 +243,17 @@ Page({
     var len = pages.length;
     var qs_cnt = this.data.qs_cnt;
     var right_cnt = this.data.right_cnt;
+    var step = this.data.step;
     if (pages && pages[len-1].route.indexOf("main/main")!=-1){
       wx.showModal({
-        title: '时间到',
+        title: '提示',
         content: '总共' + qs_cnt + "题,您总共答对了" + right_cnt + "题",
         showCancel: false,
         success: function (res) {
-          // wx.navigateBack({
-          //   delta: 1,
-          // })
           //失败-重新挑战；成功-继续挑战
           var issuccess = right_cnt==qs_cnt?1:0;
           wx.reLaunch({
-            url: '../res/res?issuccess='+issuccess+'&step='+this.data.step,
+            url: '../res/res?issuccess='+issuccess+'&step='+step,
           })
         }
       })

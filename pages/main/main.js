@@ -22,7 +22,8 @@ Page({
     qs_cnt:0,
     right_cnt:0,
     isUnderGoing:false,
-    rd_disabled:false
+    rd_disabled:false,
+    step:0
   },
   onLoad: function (options){
     var num = 5;
@@ -58,7 +59,7 @@ Page({
     subjectList = lsit;
     console.log(subjectList);
     
-    this.setData({ subjectList: subjectList, qs_cnt: qs_cnt, curSubject: subjectList[0]});
+    this.setData({ subjectList: subjectList, qs_cnt: qs_cnt, curSubject: subjectList[0],step:options.step});
     console.log(this.data.isUnderGoing);
     // watch.setData({
     //   isUnderGoing:true
@@ -119,10 +120,10 @@ Page({
     var right_cnt = isright ? this.data.right_cnt + 1 : this.data.right_cnt;
     this.setData({ ischecked: ischecked, isright: isright, right_cnt: right_cnt, rd_disabled:true });
 
-    // ans_interval = setInterval(function () {
-    //   this.restart();
-    //   clearInterval(ans_interval);
-    // }.bind(this), 500)
+    ans_interval = setInterval(function () {
+      this.restart();
+      clearInterval(ans_interval);
+    }.bind(this), 500)
 
   },
   onHide: function () {
@@ -237,20 +238,24 @@ Page({
     }.bind(this), 500)
   },
   showRes:function(){
+    // var _this = this;
     var pages = getCurrentPages();
     var len = pages.length;
+    var qs_cnt = this.data.qs_cnt;
+    var right_cnt = this.data.right_cnt;
     if (pages && pages[len-1].route.indexOf("main/main")!=-1){
       wx.showModal({
         title: '时间到',
-        content: '总共' + this.data.qs_cnt + "题,您总共答对了" + this.data.right_cnt + "题",
+        content: '总共' + qs_cnt + "题,您总共答对了" + right_cnt + "题",
         showCancel: false,
         success: function (res) {
           // wx.navigateBack({
           //   delta: 1,
           // })
           //失败-重新挑战；成功-继续挑战
+          var issuccess = right_cnt==qs_cnt?1:0;
           wx.reLaunch({
-            url: '../res/res?issuccess=1&step=1',
+            url: '../res/res?issuccess='+issuccess+'&step='+this.data.step,
           })
         }
       })

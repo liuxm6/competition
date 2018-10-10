@@ -44,11 +44,11 @@ Page({
     var issuccess = this.data.issuccess;
     if(issuccess){
       wx.navigateTo({
-        url: '../index/index?type=forward&step='+(this.data.step+1),
+        url: '../index/index?type=forward&step='+(this.data.step),
       })
     }else{
       wx.navigateTo({
-        url: '../index/index?type=repeat&step=' + this.data.step,
+        url: '../main/main?step=' + this.data.step,
       })
     }
   }

@@ -2,33 +2,41 @@
 
 .timer_countdown {
   text-align: center;
-  color: blue;
-  width: 40px;
-  height: 40px;
+  width: 78rpx;
+  height: 78rpx;
   border-radius: 50%;
   border: 1px solid #f2f2f2;
   margin-left: auto;
   margin-right: auto;
-  line-height: 40px;
-  margin-bottom: 10px;
+  line-height: 78rpx;
+  background: white;
+  color: red;
+  
 }
 
 .brand_def{
   position:absolute;
   z-index:100;
   color:#1d68a1;
-  left:7px;
+  left:6px;
   top:1px;
 }
 
-.brand_chk{
+/* 如果选对 */
+.brand_right{
+  color: yellowgreen;
+}
+.brand_none{
   display:none;
 }
+
+
 
 .sub_title{
   text-align: center;
   margin-left: 10px;
   margin-right: 10px;
+  padding-top: 80rpx;
 }
 
  .btn_blk{
@@ -36,7 +44,7 @@
   /* border: 1px solid #f2f2f2; */
   /* border-radius: 5px;
   width: 75%;*/
-  line-height: 39px; 
+  line-height: 49px; 
   /* padding-left: 5px;
   margin: 15px auto; */
   height: auto;
@@ -46,7 +54,7 @@
 .btn_right {
   /* border-radius: 5px;
   width: 75%;*/
-  line-height: 39px;
+  line-height: 49px;
   /* padding-left: 5px;
   margin: 15px auto; */
   /* height: auto; */
@@ -57,7 +65,7 @@
 .btn_error {
   /* border-radius: 5px; */
   /* width: 75%; */
-  line-height: 39px;
+  line-height: 49px;
   /* padding-left: 5px;
   margin: 15px auto; */
   /* height: auto; */
@@ -102,15 +110,6 @@
   position: relative;
 }
 
-.btn_right radio .wx-radio-input.wx-radio-input-checked::before {
-  background-color: white;
-  border: 2rpx solid #f2f2f2;
-}
-
-.btn_error radio .wx-radio-input.wx-radio-input-checked::before {
-  background-color: red;
-    border: 2rpx solid #f2f2f2;
-}
 /* radio  */
 
 /* 选对后的 对勾样式 （白色对勾 可根据UI需求自己修改） */
@@ -120,10 +119,6 @@
    background-size: 100% 100%;
 }
 
-.btn_right radio .wx-radio-input.wx-radio-input-checked {
-  border: none;
-  background: greenyellow;}
-
 /* 选错后的 对勾样式 （白色对勾 可根据UI需求自己修改） */
 .btn_error radio .wx-radio-input.wx-radio-input-checked::before{
    background-color:red; 
@@ -132,36 +127,16 @@
 
 }
 
-.btn_error radio .wx-radio-input.wx-radio-input-checked {
-  border: none;
-  background: red;}
-/* 选对后的背景样式 */
-.btn_right radio .wx-radio-input.wx-radio-input-checked{
-   border: none;
-   background: greenyellow;
-}
-
-.btn_error radio .wx-radio-input.wx-radio-input-checked::before,
-.btn_right radio .wx-radio-input.wx-radio-input-checked::before {
-  border-radius: 50%;
-  width: 40rpx;
-  height: 40rpx;
-  text-align: center;
-  color: transparent; /* 对勾颜色 白色 *//* font-size:20rpx; *//* transform:translate(-50%, -50%) scale(1);
-   -webkit-transform:translate(-50%, -50%) scale(1); */
-}
 /* 选错后的背景样式 */
 .btn_error radio .wx-radio-input.wx-radio-input-checked{
    border: none;
    background: red;
 }
-
-.btn_error radio .wx-radio-input.wx-radio-input-checked::before,.btn_right radio .wx-radio-input.wx-radio-input-checked::before{
-   border-radius: 50%;
-   width: 50rpx; 
-   height: 50rpx; 
-   text-align: center;
-   color:transparent; /* 对勾颜色 白色 */}
+/* 选对后的背景样式 */
+.btn_right radio .wx-radio-input.wx-radio-input-checked{
+   border: none;
+   background: greenyellow;
+}
 
 .btn_error radio .wx-radio-input.wx-radio-input-checked::before,.btn_right radio .wx-radio-input.wx-radio-input-checked::before{
    border-radius: 50%;

@@ -27,9 +27,9 @@ Page({
   onLoad: function (options){
     var num = 5;
     is_valid_click = true;
-    var qs_cnt = options.type ? options.type*5 : 5;
+    var qs_cnt = options.step ? options.step*5 : 5;
     var subjectList = util.getQsList(qs_cnt);
-    timerstamp = 10000;
+    timerstamp = 100;
     // qs_cnt+5;
 
     // watch = new Watch(this);
@@ -48,8 +48,12 @@ Page({
             values.options = "D"
           }
         }
-        lsit.push(subjectList[i]);
+      } else if (subjectList[i]['ans'].length == 1){
+        var ans = subjectList[i].ans;
+        var idxAns = (ans=='A')?0:(ans=='B'?1:(ans=='C'?2:3));
+        subjectList[i].idxAns = idxAns;
       }
+      lsit.push(subjectList[i]);
     }
     subjectList = lsit;
     console.log(subjectList);
@@ -127,24 +131,24 @@ Page({
   },
   onUnload: function () {
     // 生命周期函数--监听页面卸载
-    console.log("test1 onUnload");
-    var pages = getCurrentPages() // 获取页面栈
-    console.log(pages)
-    var prevPage = pages[pages.length - 2] // 上一个页面
-    console.log(prevPage.data.canShow);
-    var canShow = prevPage.data.canShow;
-    if(!canShow){
-      wx.showModal({
-        title: '您确定退出当前游戏吗?',
-        success: function (res) {
-          console.log(res);
-          if (res.confirm) {
-            return;
-          }
-        }
-      })
-      // this.showRes();
-    }
+    // console.log("test1 onUnload");
+    // var pages = getCurrentPages() // 获取页面栈
+    // console.log(pages)
+    // var prevPage = pages[pages.length - 2] // 上一个页面
+    // console.log(prevPage.data.canShow);
+    // var canShow = prevPage.data.canShow;
+    // if(!canShow){
+    //   wx.showModal({
+    //     title: '您确定退出当前游戏吗?',
+    //     success: function (res) {
+    //       console.log(res);
+    //       if (res.confirm) {
+    //         return;
+    //       }
+    //     }
+    //   })
+    //   // this.showRes();
+    // }
   },
   convertAns:function(res){
     var ret = '';
@@ -227,10 +231,10 @@ Page({
       right_cnt:right_cnt
     })
 
-    // ans_interval = setInterval(function () {
-    //   this.restart();
-    //   clearInterval(ans_interval);
-    // }.bind(this), 500)
+    ans_interval = setInterval(function () {
+      this.restart();
+      clearInterval(ans_interval);
+    }.bind(this), 500)
   },
   showRes:function(){
     var pages = getCurrentPages();
@@ -245,7 +249,7 @@ Page({
           //   delta: 1,
           // })
           //失败-重新挑战；成功-继续挑战
-          wx.navigateTo({
+          wx.reLaunch({
             url: '../res/res?issuccess=1&step=1',
           })
         }

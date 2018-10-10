@@ -2644,35 +2644,19 @@ var ltyl = [{
   "title": "短焰燃烧器实现短焰又不回火，（ ）是关键。",
   "ans": "AC",
   "opts": [{
-    "title": {
-      "title": "燃烧口的大小",
-      "value": 0,
-      "checked": 0
-    },
+    "title": "燃烧口的大小",
     "value": 0,
     "checked": 0
   }, {
-    "title": {
-      "title": "燃烧器的高度",
-      "value": 1,
-      "checked": 0
-    },
+    "title": "燃烧器的高度",
     "value": 1,
     "checked": 0
   }, {
-    "title": {
-      "title": "流速",
-      "value": 2,
-      "checked": 0
-    },
+    "title": "流速",
     "value": 2,
     "checked": 0
   }, {
-    "title": {
-      "title": "空气过剩系数",
-      "value": 3,
-      "checked": 0
-    },
+    "title": "空气过剩系数",
     "value": 3,
     "checked": 0
   }]
@@ -2682,35 +2666,19 @@ var ltyl = [{
   "title": "炼钢与炼铁过程相比，（ ）。",
   "ans": "ABC",
   "opts": [{
-    "title": {
-      "title": "钢渣的温度高",
-      "value": 0,
-      "checked": 0
-    },
+    "title": "钢渣的温度高",
     "value": 0,
     "checked": 0
   }, {
-    "title": {
-      "title": "钢渣的碱度高",
-      "value": 1,
-      "checked": 0
-    },
+    "title": "钢渣的碱度高",
     "value": 1,
     "checked": 0
   }, {
-    "title": {
-      "title": "钢渣中（FeO）高",
-      "value": 2,
-      "checked": 0
-    },
+    "title": "钢渣中（FeO）高",
     "value": 2,
     "checked": 0
   }, {
-    "title": {
-      "title": "钢渣与钢水的硫的理论分配系数高",
-      "value": 3,
-      "checked": 0
-    },
+    "title": "钢渣与钢水的硫的理论分配系数高",
     "value": 3,
     "checked": 0
   }]
@@ -2720,35 +2688,19 @@ var ltyl = [{
   "title": "化学反应的平衡常数与（ ）有关。",
   "ans": "AD",
   "opts": [{
-    "title": {
-      "title": "温度",
-      "value": 0,
-      "checked": 0
-    },
+    "title": "温度",
     "value": 0,
     "checked": 0
   }, {
-    "title": {
-      "title": "压力",
-      "value": 1,
-      "checked": 0
-    },
+    "title": "压力",
     "value": 1,
     "checked": 0
   }, {
-    "title": {
-      "title": "气体流速",
-      "value": 2,
-      "checked": 0
-    },
+    "title": "气体流速",
     "value": 2,
     "checked": 0
   }, {
-    "title": {
-      "title": "过剩系数",
-      "value": 3,
-      "checked": 0
-    },
+    "title": "过剩系数",
     "value": 3,
     "checked": 0
   }]
@@ -2758,35 +2710,19 @@ var ltyl = [{
   "title": "关于高炉内碳酸盐分解的规律，叙述错误的是（ ）。",
   "ans": "BCD",
   "opts": [{
-    "title": {
-      "title": "碳酸盐的分解压随温度的升高而增大",
-      "value": 0,
-      "checked": 0
-    },
+    "title": "碳酸盐的分解压随温度的升高而增大",
     "value": 0,
     "checked": 0
   }, {
-    "title": {
-      "title": "碳酸盐的分解压越大，碳酸盐的稳定性越好",
-      "value": 1,
-      "checked": 0
-    },
+    "title": "碳酸盐的分解压越大，碳酸盐的稳定性越好",
     "value": 1,
     "checked": 0
   }, {
-    "title": {
-      "title": "当碳酸盐的分解压超过炉内煤气总压时，开始分解",
-      "value": 2,
-      "checked": 0
-    },
+    "title": "当碳酸盐的分解压超过炉内煤气总压时，开始分解",
     "value": 2,
     "checked": 0
   }, {
-    "title": {
-      "title": "当碳酸盐的分解压超过炉内煤气的CO2分压压力时激烈分解即化学沸腾",
-      "value": 3,
-      "checked": 0
-    },
+    "title": "当碳酸盐的分解压超过炉内煤气的CO2分压压力时激烈分解即化学沸腾",
     "value": 3,
     "checked": 0
   }]
@@ -2796,35 +2732,19 @@ var ltyl = [{
   "title": "下列措施（ ）使炉顶温度下降。",
   "ans": "ABC",
   "opts": [{
-    "title": {
-      "title": "富氧鼓风",
-      "value": 0,
-      "checked": 0
-    },
+    "title": "富氧鼓风",
     "value": 0,
     "checked": 0
   }, {
-    "title": {
-      "title": "降低燃料比",
-      "value": 1,
-      "checked": 0
-    },
+    "title": "降低燃料比",
     "value": 1,
     "checked": 0
   }, {
-    "title": {
-      "title": "增大焦炭负荷",
-      "value": 2,
-      "checked": 0
-    },
+    "title": "增大焦炭负荷",
     "value": 2,
     "checked": 0
   }, {
-    "title": {
-      "title": "喷煤",
-      "value": 3,
-      "checked": 0
-    },
+    "title": "喷煤",
     "value": 3,
     "checked": 0
   }]
@@ -2834,35 +2754,19 @@ var ltyl = [{
   "title": "炉渣成分来自以下几个方面（ ）。",
   "ans": "ABCD",
   "opts": [{
-    "title": {
-      "title": "矿石中的脉石",
-      "value": 0,
-      "checked": 0
-    },
+    "title": "矿石中的脉石",
     "value": 0,
     "checked": 0
   }, {
-    "title": {
-      "title": "焦炭灰分",
-      "value": 1,
-      "checked": 0
-    },
+    "title": "焦炭灰分",
     "value": 1,
     "checked": 0
   }, {
-    "title": {
-      "title": "熔剂氧化物",
-      "value": 2,
-      "checked": 0
-    },
+    "title": "熔剂氧化物",
     "value": 2,
     "checked": 0
   }, {
-    "title": {
-      "title": "被浸的炉衬",
-      "value": 3,
-      "checked": 0
-    },
+    "title": "被浸的炉衬",
     "value": 3,
     "checked": 0
   }]
@@ -2872,35 +2776,19 @@ var ltyl = [{
   "title": "管道行程的征兆是（ ）。",
   "ans": "ABC",
   "opts": [{
-    "title": {
-      "title": "风压下降、风量自动增加",
-      "value": 0,
-      "checked": 0
-    },
+    "title": "风压下降、风量自动增加",
     "value": 0,
     "checked": 0
   }, {
-    "title": {
-      "title": "料尺工作不均，出现滑尺、埋尺、停滞、塌落等假尺现象",
-      "value": 1,
-      "checked": 0
-    },
+    "title": "料尺工作不均，出现滑尺、埋尺、停滞、塌落等假尺现象",
     "value": 1,
     "checked": 0
   }, {
-    "title": {
-      "title": "炉喉煤气曲线不规则，管道处CO2值低",
-      "value": 2,
-      "checked": 0
-    },
+    "title": "炉喉煤气曲线不规则，管道处CO2值低",
     "value": 2,
     "checked": 0
   }, {
-    "title": {
-      "title": "瓦斯灰（炉尘）吹出量明显减少",
-      "value": 3,
-      "checked": 0
-    },
+    "title": "瓦斯灰（炉尘）吹出量明显减少",
     "value": 3,
     "checked": 0
   }]
@@ -2910,35 +2798,19 @@ var ltyl = [{
   "title": "上部管道行程的处理措施叙述正确的是（ ）。",
   "ans": "ABC",
   "opts": [{
-    "title": {
-      "title": "适当减风，炉热引起的管道可以降风温",
-      "value": 0,
-      "checked": 0
-    },
+    "title": "适当减风，炉热引起的管道可以降风温",
     "value": 0,
     "checked": 0
   }, {
-    "title": {
-      "title": "改变布料，将几批料的炉料堆尖放在管道位置，堵塞管道",
-      "value": 1,
-      "checked": 0
-    },
+    "title": "改变布料，将几批料的炉料堆尖放在管道位置，堵塞管道",
     "value": 1,
     "checked": 0
   }, {
-    "title": {
-      "title": "用高压、常压转换的方法重新合理分布煤气流",
-      "value": 2,
-      "checked": 0
-    },
+    "title": "用高压、常压转换的方法重新合理分布煤气流",
     "value": 2,
     "checked": 0
   }, {
-    "title": {
-      "title": "其他调整不见效时，应休风处理、破坏管道行程",
-      "value": 3,
-      "checked": 0
-    },
+    "title": "其他调整不见效时，应休风处理、破坏管道行程",
     "value": 3,
     "checked": 0
   }]
@@ -2948,35 +2820,19 @@ var ltyl = [{
   "title": "风量调节的原则有（ ）。",
   "ans": "BD",
   "opts": [{
-    "title": {
-      "title": "控制料批",
-      "value": 0,
-      "checked": 0
-    },
+    "title": "控制料批",
     "value": 0,
     "checked": 0
   }, {
-    "title": {
-      "title": "减风一次到位，加风应和缓",
-      "value": 1,
-      "checked": 0
-    },
+    "title": "减风一次到位，加风应和缓",
     "value": 1,
     "checked": 0
   }, {
-    "title": {
-      "title": "稳定气流",
-      "value": 2,
-      "checked": 0
-    },
+    "title": "稳定气流",
     "value": 2,
     "checked": 0
   }, {
-    "title": {
-      "title": "一般只宜在其他手段犹不足时才采取",
-      "value": 3,
-      "checked": 0
-    },
+    "title": "一般只宜在其他手段犹不足时才采取",
     "value": 3,
     "checked": 0
   }]
@@ -2986,35 +2842,19 @@ var ltyl = [{
   "title": "高炉对喷吹煤的性能要求为（ ）。",
   "ans": "ABC",
   "opts": [{
-    "title": {
-      "title": "煤的灰分要低",
-      "value": 0,
-      "checked": 0
-    },
+    "title": "煤的灰分要低",
     "value": 0,
     "checked": 0
   }, {
-    "title": {
-      "title": "煤的硫分要低",
-      "value": 1,
-      "checked": 0
-    },
+    "title": "煤的硫分要低",
     "value": 1,
     "checked": 0
   }, {
-    "title": {
-      "title": "煤的燃烧性能要好，其着火温度低，反应性强。",
-      "value": 2,
-      "checked": 0
-    },
+    "title": "煤的燃烧性能要好，其着火温度低，反应性强。",
     "value": 2,
     "checked": 0
   }, {
-    "title": {
-      "title": "可磨性要差",
-      "value": 3,
-      "checked": 0
-    },
+    "title": "可磨性要差",
     "value": 3,
     "checked": 0
   }]
@@ -3024,35 +2864,19 @@ var ltyl = [{
   "title": "降低铁水[S]的措施有（ ）。",
   "ans": "ABC",
   "opts": [{
-    "title": {
-      "title": "降低硫负荷",
-      "value": 0,
-      "checked": 0
-    },
+    "title": "降低硫负荷",
     "value": 0,
     "checked": 0
   }, {
-    "title": {
-      "title": "增大硫的挥发量",
-      "value": 1,
-      "checked": 0
-    },
+    "title": "增大硫的挥发量",
     "value": 1,
     "checked": 0
   }, {
-    "title": {
-      "title": "加大渣量",
-      "value": 2,
-      "checked": 0
-    },
+    "title": "加大渣量",
     "value": 2,
     "checked": 0
   }, {
-    "title": {
-      "title": "降低硫的分配系数",
-      "value": 3,
-      "checked": 0
-    },
+    "title": "降低硫的分配系数",
     "value": 3,
     "checked": 0
   }]
@@ -3062,35 +2886,19 @@ var ltyl = [{
   "title": "降低直接还原度的方法包括（ ）。",
   "ans": "ABCD",
   "opts": [{
-    "title": {
-      "title": "改善铁矿石的还原度",
-      "value": 0,
-      "checked": 0
-    },
+    "title": "改善铁矿石的还原度",
     "value": 0,
     "checked": 0
   }, {
-    "title": {
-      "title": "炼铁工序能耗是指冶炼每吨延长煤气与矿石的接触时间",
-      "value": 1,
-      "checked": 0
-    },
+    "title": "炼铁工序能耗是指冶炼每吨延长煤气与矿石的接触时间",
     "value": 1,
     "checked": 0
   }, {
-    "title": {
-      "title": "扩大高炉的中部区域",
-      "value": 2,
-      "checked": 0
-    },
+    "title": "扩大高炉的中部区域",
     "value": 2,
     "checked": 0
   }, {
-    "title": {
-      "title": "喷吹含H2的燃料",
-      "value": 3,
-      "checked": 0
-    },
+    "title": "喷吹含H2的燃料",
     "value": 3,
     "checked": 0
   }]
@@ -3100,35 +2908,19 @@ var ltyl = [{
   "title": "炉渣中含有一定数量的MgO，能提高炉渣的（ ）。",
   "ans": "BC",
   "opts": [{
-    "title": {
-      "title": "熔化温度",
-      "value": 0,
-      "checked": 0
-    },
+    "title": "熔化温度",
     "value": 0,
     "checked": 0
   }, {
-    "title": {
-      "title": "流动性",
-      "value": 1,
-      "checked": 0
-    },
+    "title": "流动性",
     "value": 1,
     "checked": 0
   }, {
-    "title": {
-      "title": "脱硫能力",
-      "value": 2,
-      "checked": 0
-    },
+    "title": "脱硫能力",
     "value": 2,
     "checked": 0
   }, {
-    "title": {
-      "title": "脱磷能力",
-      "value": 3,
-      "checked": 0
-    },
+    "title": "脱磷能力",
     "value": 3,
     "checked": 0
   }]
@@ -3138,35 +2930,19 @@ var ltyl = [{
   "title": "冶金学按研究的领域分为两类是（ ）。",
   "ans": "AB",
   "opts": [{
-    "title": {
-      "title": "物理冶金学",
-      "value": 0,
-      "checked": 0
-    },
+    "title": "物理冶金学",
     "value": 0,
     "checked": 0
   }, {
-    "title": {
-      "title": "化学冶金学",
-      "value": 1,
-      "checked": 0
-    },
+    "title": "化学冶金学",
     "value": 1,
     "checked": 0
   }, {
-    "title": {
-      "title": "有色冶金",
-      "value": 2,
-      "checked": 0
-    },
+    "title": "有色冶金",
     "value": 2,
     "checked": 0
   }, {
-    "title": {
-      "title": "黑色冶金",
-      "value": 3,
-      "checked": 0
-    },
+    "title": "黑色冶金",
     "value": 3,
     "checked": 0
   }]
@@ -3176,35 +2952,19 @@ var ltyl = [{
   "title": "高炉强化冶炼后风口布局原则（ ）。",
   "ans": "BCD",
   "opts": [{
-    "title": {
-      "title": "炉墙结厚的部位采用大风口、长风口",
-      "value": 0,
-      "checked": 0
-    },
+    "title": "炉墙结厚的部位采用大风口、长风口",
     "value": 0,
     "checked": 0
   }, {
-    "title": {
-      "title": "铁口难维护时，铁口两侧用小风口、长风口",
-      "value": 1,
-      "checked": 0
-    },
+    "title": "铁口难维护时，铁口两侧用小风口、长风口",
     "value": 1,
     "checked": 0
   }, {
-    "title": {
-      "title": "煤气流分布不均，下料快的方位应缩小风口面积",
-      "value": 2,
-      "checked": 0
-    },
+    "title": "煤气流分布不均，下料快的方位应缩小风口面积",
     "value": 2,
     "checked": 0
   }, {
-    "title": {
-      "title": "炉缸工作不均匀时，进风少的区域使用大风口",
-      "value": 3,
-      "checked": 0
-    },
+    "title": "炉缸工作不均匀时，进风少的区域使用大风口",
     "value": 3,
     "checked": 0
   }]
@@ -3214,35 +2974,19 @@ var ltyl = [{
   "title": "空料线停炉过程中煤气中CO2的含量与料线的关系式（ ）。",
   "ans": "AD",
   "opts": [{
-    "title": {
-      "title": "可根据CO2的含量判断料线",
-      "value": 0,
-      "checked": 0
-    },
+    "title": "可根据CO2的含量判断料线",
     "value": 0,
     "checked": 0
   }, {
-    "title": {
-      "title": "CO2曲线拐点在炉身下部，标志间接还原结束",
-      "value": 1,
-      "checked": 0
-    },
+    "title": "CO2曲线拐点在炉身下部，标志间接还原结束",
     "value": 1,
     "checked": 0
   }, {
-    "title": {
-      "title": "料线降至风口中心线时CO2达到18-20%，出最后一次铁后停炉休风",
-      "value": 2,
-      "checked": 0
-    },
+    "title": "料线降至风口中心线时CO2达到18-20%，出最后一次铁后停炉休风",
     "value": 2,
     "checked": 0
   }, {
-    "title": {
-      "title": "料线降至风口附近时CO2达到15-18%，出最后一次铁后停炉休风",
-      "value": 3,
-      "checked": 0
-    },
+    "title": "料线降至风口附近时CO2达到15-18%，出最后一次铁后停炉休风",
     "value": 3,
     "checked": 0
   }]
@@ -3252,35 +2996,19 @@ var ltyl = [{
   "title": "表示热制度的指标是（ ）。",
   "ans": "ABC",
   "opts": [{
-    "title": {
-      "title": "铁水温度",
-      "value": 0,
-      "checked": 0
-    },
+    "title": "铁水温度",
     "value": 0,
     "checked": 0
   }, {
-    "title": {
-      "title": "Si",
-      "value": 1,
-      "checked": 0
-    },
+    "title": "Si",
     "value": 1,
     "checked": 0
   }, {
-    "title": {
-      "title": "Ti",
-      "value": 2,
-      "checked": 0
-    },
+    "title": "Ti",
     "value": 2,
     "checked": 0
   }, {
-    "title": {
-      "title": "P",
-      "value": 3,
-      "checked": 0
-    },
+    "title": "P",
     "value": 3,
     "checked": 0
   }]
@@ -3290,35 +3018,19 @@ var ltyl = [{
   "title": "高炉内FeO是通过（ ）方式被还原。",
   "ans": "ABCD",
   "opts": [{
-    "title": {
-      "title": "被气体H2间接还原",
-      "value": 0,
-      "checked": 0
-    },
+    "title": "被气体H2间接还原",
     "value": 0,
     "checked": 0
   }, {
-    "title": {
-      "title": "借助碳素溶解损失反应和水煤气反应被C直接还原",
-      "value": 1,
-      "checked": 0
-    },
+    "title": "借助碳素溶解损失反应和水煤气反应被C直接还原",
     "value": 1,
     "checked": 0
   }, {
-    "title": {
-      "title": "含FeO的液态炉渣与焦炭接触时或与铁水中饱和碳发生反应。",
-      "value": 2,
-      "checked": 0
-    },
+    "title": "含FeO的液态炉渣与焦炭接触时或与铁水中饱和碳发生反应。",
     "value": 2,
     "checked": 0
   }, {
-    "title": {
-      "title": "被气体CO间接还原",
-      "value": 3,
-      "checked": 0
-    },
+    "title": "被气体CO间接还原",
     "value": 3,
     "checked": 0
   }]
@@ -3328,35 +3040,19 @@ var ltyl = [{
   "title": "高炉强化冶炼后风口布局原则是（ ）。",
   "ans": "ACD",
   "opts": [{
-    "title": {
-      "title": "炉墙结厚的部位采用大风口、短风口",
-      "value": 0,
-      "checked": 0
-    },
+    "title": "炉墙结厚的部位采用大风口、短风口",
     "value": 0,
     "checked": 0
   }, {
-    "title": {
-      "title": "铁口难开维护时，铁口两侧采用小风口、短风口",
-      "value": 1,
-      "checked": 0
-    },
+    "title": "铁口难开维护时，铁口两侧采用小风口、短风口",
     "value": 1,
     "checked": 0
   }, {
-    "title": {
-      "title": "煤气流分布不均，炉料偏行，下料快的方位应缩小风口面积",
-      "value": 2,
-      "checked": 0
-    },
+    "title": "煤气流分布不均，炉料偏行，下料快的方位应缩小风口面积",
     "value": 2,
     "checked": 0
   }, {
-    "title": {
-      "title": "炉缸工作不均匀时，进风少的区域采用大风口",
-      "value": 3,
-      "checked": 0
-    },
+    "title": "炉缸工作不均匀时，进风少的区域采用大风口",
     "value": 3,
     "checked": 0
   }]
@@ -3366,35 +3062,19 @@ var ltyl = [{
   "title": "全硫的测定方法有（ ）。",
   "ans": "ABC",
   "opts": [{
-    "title": {
-      "title": "质量法",
-      "value": 0,
-      "checked": 0
-    },
+    "title": "质量法",
     "value": 0,
     "checked": 0
   }, {
-    "title": {
-      "title": "库仑滴定法",
-      "value": 1,
-      "checked": 0
-    },
+    "title": "库仑滴定法",
     "value": 1,
     "checked": 0
   }, {
-    "title": {
-      "title": "高温燃烧中和法",
-      "value": 2,
-      "checked": 0
-    },
+    "title": "高温燃烧中和法",
     "value": 2,
     "checked": 0
   }, {
-    "title": {
-      "title": "化学分析法",
-      "value": 3,
-      "checked": 0
-    },
+    "title": "化学分析法",
     "value": 3,
     "checked": 0
   }]
@@ -3404,35 +3084,19 @@ var ltyl = [{
   "title": "评价铁矿石质量应从（?）等方面进行。",
   "ans": "ABCD",
   "opts": [{
-    "title": {
-      "title": "矿石含铁量",
-      "value": 0,
-      "checked": 0
-    },
+    "title": "矿石含铁量",
     "value": 0,
     "checked": 0
   }, {
-    "title": {
-      "title": "脉石的化学成分",
-      "value": 1,
-      "checked": 0
-    },
+    "title": "脉石的化学成分",
     "value": 1,
     "checked": 0
   }, {
-    "title": {
-      "title": "矿石中的有害杂质",
-      "value": 2,
-      "checked": 0
-    },
+    "title": "矿石中的有害杂质",
     "value": 2,
     "checked": 0
   }, {
-    "title": {
-      "title": "矿石的还原性",
-      "value": 3,
-      "checked": 0
-    },
+    "title": "矿石的还原性",
     "value": 3,
     "checked": 0
   }]
@@ -3442,35 +3106,19 @@ var ltyl = [{
   "title": "合理炉料结构根据（ ）来确定。",
   "ans": "ABCD",
   "opts": [{
-    "title": {
-      "title": "根据资源、矿石加工技术水平",
-      "value": 0,
-      "checked": 0
-    },
+    "title": "根据资源、矿石加工技术水平",
     "value": 0,
     "checked": 0
   }, {
-    "title": {
-      "title": "设备状况",
-      "value": 1,
-      "checked": 0
-    },
+    "title": "设备状况",
     "value": 1,
     "checked": 0
   }, {
-    "title": {
-      "title": "造块成品矿的价格及其冶金性能",
-      "value": 2,
-      "checked": 0
-    },
+    "title": "造块成品矿的价格及其冶金性能",
     "value": 2,
     "checked": 0
   }, {
-    "title": {
-      "title": "结合具体条件通过试验、论证后",
-      "value": 3,
-      "checked": 0
-    },
+    "title": "结合具体条件通过试验、论证后",
     "value": 3,
     "checked": 0
   }]
@@ -3480,35 +3128,19 @@ var ltyl = [{
   "title": "下列哪些是富氧后的冶炼特征（ ）。",
   "ans": "ABD",
   "opts": [{
-    "title": {
-      "title": "理论燃烧温度升高",
-      "value": 0,
-      "checked": 0
-    },
+    "title": "理论燃烧温度升高",
     "value": 0,
     "checked": 0
   }, {
-    "title": {
-      "title": "煤气量减少",
-      "value": 1,
-      "checked": 0
-    },
+    "title": "煤气量减少",
     "value": 1,
     "checked": 0
   }, {
-    "title": {
-      "title": "间接还原扩大",
-      "value": 2,
-      "checked": 0
-    },
+    "title": "间接还原扩大",
     "value": 2,
     "checked": 0
   }, {
-    "title": {
-      "title": "煤气发热值提高",
-      "value": 3,
-      "checked": 0
-    },
+    "title": "煤气发热值提高",
     "value": 3,
     "checked": 0
   }]
@@ -3518,35 +3150,19 @@ var ltyl = [{
   "title": "生产过程中，应严密控制的关键性环节为（ ）。",
   "ans": "ABC",
   "opts": [{
-    "title": {
-      "title": "送风条件",
-      "value": 0,
-      "checked": 0
-    },
+    "title": "送风条件",
     "value": 0,
     "checked": 0
   }, {
-    "title": {
-      "title": "软融区的位置、形状、尺寸",
-      "value": 1,
-      "checked": 0
-    },
+    "title": "软融区的位置、形状、尺寸",
     "value": 1,
     "checked": 0
   }, {
-    "title": {
-      "title": "固体炉料区的工作状态",
-      "value": 2,
-      "checked": 0
-    },
+    "title": "固体炉料区的工作状态",
     "value": 2,
     "checked": 0
   }, {
-    "title": {
-      "title": "设备状况",
-      "value": 3,
-      "checked": 0
-    },
+    "title": "设备状况",
     "value": 3,
     "checked": 0
   }]
@@ -3556,35 +3172,19 @@ var ltyl = [{
   "title": "喷吹燃料后对冶炼影响的是（ ）。",
   "ans": "ABD",
   "opts": [{
-    "title": {
-      "title": "顶温升高",
-      "value": 0,
-      "checked": 0
-    },
+    "title": "顶温升高",
     "value": 0,
     "checked": 0
   }, {
-    "title": {
-      "title": "还原改善",
-      "value": 1,
-      "checked": 0
-    },
+    "title": "还原改善",
     "value": 1,
     "checked": 0
   }, {
-    "title": {
-      "title": "生铁质量变差",
-      "value": 2,
-      "checked": 0
-    },
+    "title": "生铁质量变差",
     "value": 2,
     "checked": 0
   }, {
-    "title": {
-      "title": "理论燃烧温度降低",
-      "value": 3,
-      "checked": 0
-    },
+    "title": "理论燃烧温度降低",
     "value": 3,
     "checked": 0
   }]
@@ -3594,35 +3194,19 @@ var ltyl = [{
   "title": "高炉强化冶炼的基本途径是（ ）。",
   "ans": "AD",
   "opts": [{
-    "title": {
-      "title": "提高冶炼强度",
-      "value": 0,
-      "checked": 0
-    },
+    "title": "提高冶炼强度",
     "value": 0,
     "checked": 0
   }, {
-    "title": {
-      "title": "降低冶炼强度",
-      "value": 1,
-      "checked": 0
-    },
+    "title": "降低冶炼强度",
     "value": 1,
     "checked": 0
   }, {
-    "title": {
-      "title": "提高焦比",
-      "value": 2,
-      "checked": 0
-    },
+    "title": "提高焦比",
     "value": 2,
     "checked": 0
   }, {
-    "title": {
-      "title": "降低焦比",
-      "value": 3,
-      "checked": 0
-    },
+    "title": "降低焦比",
     "value": 3,
     "checked": 0
   }]
@@ -3632,35 +3216,19 @@ var ltyl = [{
   "title": "生铁的形成过程主要是还原出来的金属铁和（ ）等元素的溶入。",
   "ans": "ABCD",
   "opts": [{
-    "title": {
-      "title": "C",
-      "value": 0,
-      "checked": 0
-    },
+    "title": "C",
     "value": 0,
     "checked": 0
   }, {
-    "title": {
-      "title": "Si",
-      "value": 1,
-      "checked": 0
-    },
+    "title": "Si",
     "value": 1,
     "checked": 0
   }, {
-    "title": {
-      "title": "Mn",
-      "value": 2,
-      "checked": 0
-    },
+    "title": "Mn",
     "value": 2,
     "checked": 0
   }, {
-    "title": {
-      "title": "P",
-      "value": 3,
-      "checked": 0
-    },
+    "title": "P",
     "value": 3,
     "checked": 0
   }]
@@ -3670,35 +3238,19 @@ var ltyl = [{
   "title": "炉缸燃烧反应在高炉冶炼中的作用有（ ）。",
   "ans": "ABCD",
   "opts": [{
-    "title": {
-      "title": "提供热量",
-      "value": 0,
-      "checked": 0
-    },
+    "title": "提供热量",
     "value": 0,
     "checked": 0
   }, {
-    "title": {
-      "title": "提供自由空间",
-      "value": 1,
-      "checked": 0
-    },
+    "title": "提供自由空间",
     "value": 1,
     "checked": 0
   }, {
-    "title": {
-      "title": "提供还原剂",
-      "value": 2,
-      "checked": 0
-    },
+    "title": "提供还原剂",
     "value": 2,
     "checked": 0
   }, {
-    "title": {
-      "title": "影响生铁质量",
-      "value": 3,
-      "checked": 0
-    },
+    "title": "影响生铁质量",
     "value": 3,
     "checked": 0
   }]
@@ -3708,35 +3260,19 @@ var ltyl = [{
   "title": "（ ）对炉渣的脱硫反应有利。",
   "ans": "ABC",
   "opts": [{
-    "title": {
-      "title": "提高温度",
-      "value": 0,
-      "checked": 0
-    },
+    "title": "提高温度",
     "value": 0,
     "checked": 0
   }, {
-    "title": {
-      "title": "提高[Si]",
-      "value": 1,
-      "checked": 0
-    },
+    "title": "提高[Si]",
     "value": 1,
     "checked": 0
   }, {
-    "title": {
-      "title": "提高[Mn]",
-      "value": 2,
-      "checked": 0
-    },
+    "title": "提高[Mn]",
     "value": 2,
     "checked": 0
   }, {
-    "title": {
-      "title": "提高渣氧势",
-      "value": 3,
-      "checked": 0
-    },
+    "title": "提高渣氧势",
     "value": 3,
     "checked": 0
   }]
@@ -3746,35 +3282,19 @@ var ltyl = [{
   "title": "目前计算理论焦比的方法有（ ）计算法。",
   "ans": "ABCD",
   "opts": [{
-    "title": {
-      "title": "联合",
-      "value": 0,
-      "checked": 0
-    },
+    "title": "联合",
     "value": 0,
     "checked": 0
   }, {
-    "title": {
-      "title": "里斯特",
-      "value": 1,
-      "checked": 0
-    },
+    "title": "里斯特",
     "value": 1,
     "checked": 0
   }, {
-    "title": {
-      "title": "工程",
-      "value": 2,
-      "checked": 0
-    },
+    "title": "工程",
     "value": 2,
     "checked": 0
   }, {
-    "title": {
-      "title": "区域热平衡",
-      "value": 3,
-      "checked": 0
-    },
+    "title": "区域热平衡",
     "value": 3,
     "checked": 0
   }]
@@ -3784,35 +3304,19 @@ var ltyl = [{
   "title": "影响炉渣脱硫能力的因素（ ）。",
   "ans": "ABCD",
   "opts": [{
-    "title": {
-      "title": "炉渣碱度",
-      "value": 0,
-      "checked": 0
-    },
+    "title": "炉渣碱度",
     "value": 0,
     "checked": 0
   }, {
-    "title": {
-      "title": "渣铁温度",
-      "value": 1,
-      "checked": 0
-    },
+    "title": "渣铁温度",
     "value": 1,
     "checked": 0
   }, {
-    "title": {
-      "title": "硫在生铁中的活度",
-      "value": 2,
-      "checked": 0
-    },
+    "title": "硫在生铁中的活度",
     "value": 2,
     "checked": 0
   }, {
-    "title": {
-      "title": "高炉操作",
-      "value": 3,
-      "checked": 0
-    },
+    "title": "高炉操作",
     "value": 3,
     "checked": 0
   }]
@@ -3822,35 +3326,19 @@ var ltyl = [{
   "title": "高炉不具备脱磷能力的原因包括（ ）。",
   "ans": "ACD",
   "opts": [{
-    "title": {
-      "title": "磷在原料中以磷酸盐的形式存在，炉内有SiO2的存在，置换出P2O5，使磷还原变容易",
-      "value": 0,
-      "checked": 0
-    },
+    "title": "磷在原料中以磷酸盐的形式存在，炉内有SiO2的存在，置换出P2O5，使磷还原变容易",
     "value": 0,
     "checked": 0
   }, {
-    "title": {
-      "title": "P2O5不易挥发，与C接触后难还原",
-      "value": 1,
-      "checked": 0
-    },
+    "title": "P2O5不易挥发，与C接触后难还原",
     "value": 1,
     "checked": 0
   }, {
-    "title": {
-      "title": "还原出的P与Fe生成Fe3P和Fe2P，有利于磷的还原",
-      "value": 2,
-      "checked": 0
-    },
+    "title": "还原出的P与Fe生成Fe3P和Fe2P，有利于磷的还原",
     "value": 2,
     "checked": 0
   }, {
-    "title": {
-      "title": "P容易挥发，促进还原反应的进行",
-      "value": 3,
-      "checked": 0
-    },
+    "title": "P容易挥发，促进还原反应的进行",
     "value": 3,
     "checked": 0
   }]
@@ -3860,35 +3348,19 @@ var ltyl = [{
   "title": "高风温操作后煤气中CO利用率提高，原因在于（ ）。",
   "ans": "AB",
   "opts": [{
-    "title": {
-      "title": "间接还原区扩大",
-      "value": 0,
-      "checked": 0
-    },
+    "title": "间接还原区扩大",
     "value": 0,
     "checked": 0
   }, {
-    "title": {
-      "title": "焦比降低",
-      "value": 1,
-      "checked": 0
-    },
+    "title": "焦比降低",
     "value": 1,
     "checked": 0
   }, {
-    "title": {
-      "title": "炉身温度升高",
-      "value": 2,
-      "checked": 0
-    },
+    "title": "炉身温度升高",
     "value": 2,
     "checked": 0
   }, {
-    "title": {
-      "title": "料柱透气性差，煤气在炉内停留时间延长",
-      "value": 3,
-      "checked": 0
-    },
+    "title": "料柱透气性差，煤气在炉内停留时间延长",
     "value": 3,
     "checked": 0
   }]
@@ -3898,35 +3370,19 @@ var ltyl = [{
   "title": "碰撞点的位置与下列因素有关的是（ ）。",
   "ans": "ABCD",
   "opts": [{
-    "title": {
-      "title": "炉料性质",
-      "value": 0,
-      "checked": 0
-    },
+    "title": "炉料性质",
     "value": 0,
     "checked": 0
   }, {
-    "title": {
-      "title": "炉喉间隙",
-      "value": 1,
-      "checked": 0
-    },
+    "title": "炉喉间隙",
     "value": 1,
     "checked": 0
   }, {
-    "title": {
-      "title": "大钟边缘伸出漏斗的长度",
-      "value": 2,
-      "checked": 0
-    },
+    "title": "大钟边缘伸出漏斗的长度",
     "value": 2,
     "checked": 0
   }, {
-    "title": {
-      "title": "溜槽倾动距",
-      "value": 3,
-      "checked": 0
-    },
+    "title": "溜槽倾动距",
     "value": 3,
     "checked": 0
   }]
@@ -3936,35 +3392,19 @@ var ltyl = [{
   "title": "高炉内的还原反应基本分为两大类（ ）。",
   "ans": "AB",
   "opts": [{
-    "title": {
-      "title": "间接还原",
-      "value": 0,
-      "checked": 0
-    },
+    "title": "间接还原",
     "value": 0,
     "checked": 0
   }, {
-    "title": {
-      "title": "直接还原",
-      "value": 1,
-      "checked": 0
-    },
+    "title": "直接还原",
     "value": 1,
     "checked": 0
   }, {
-    "title": {
-      "title": "还原反应",
-      "value": 2,
-      "checked": 0
-    },
+    "title": "还原反应",
     "value": 2,
     "checked": 0
   }, {
-    "title": {
-      "title": "氧化反应",
-      "value": 3,
-      "checked": 0
-    },
+    "title": "氧化反应",
     "value": 3,
     "checked": 0
   }]
@@ -3974,35 +3414,19 @@ var ltyl = [{
   "title": "钢铁生产过程由矿石到钢材可分为两个流程是（ ）。",
   "ans": "AB",
   "opts": [{
-    "title": {
-      "title": "长流程",
-      "value": 0,
-      "checked": 0
-    },
+    "title": "长流程",
     "value": 0,
     "checked": 0
   }, {
-    "title": {
-      "title": "短流程",
-      "value": 1,
-      "checked": 0
-    },
+    "title": "短流程",
     "value": 1,
     "checked": 0
   }, {
-    "title": {
-      "title": "基本流程",
-      "value": 2,
-      "checked": 0
-    },
+    "title": "基本流程",
     "value": 2,
     "checked": 0
   }, {
-    "title": {
-      "title": "非基本流程",
-      "value": 3,
-      "checked": 0
-    },
+    "title": "非基本流程",
     "value": 3,
     "checked": 0
   }]
@@ -4012,35 +3436,19 @@ var ltyl = [{
   "title": "关于烧结矿中四元系铁酸钙的说法正确的是（ ）。",
   "ans": "ABD",
   "opts": [{
-    "title": {
-      "title": "可提高烧结矿的强度",
-      "value": 0,
-      "checked": 0
-    },
+    "title": "可提高烧结矿的强度",
     "value": 0,
     "checked": 0
   }, {
-    "title": {
-      "title": "改善烧结矿的还原性",
-      "value": 1,
-      "checked": 0
-    },
+    "title": "改善烧结矿的还原性",
     "value": 1,
     "checked": 0
   }, {
-    "title": {
-      "title": "微观结构为片状",
-      "value": 2,
-      "checked": 0
-    },
+    "title": "微观结构为片状",
     "value": 2,
     "checked": 0
   }, {
-    "title": {
-      "title": "微观结构为针状",
-      "value": 3,
-      "checked": 0
-    },
+    "title": "微观结构为针状",
     "value": 3,
     "checked": 0
   }]
@@ -4050,35 +3458,19 @@ var ltyl = [{
   "title": "两把探尺相差超过0.5米，谓偏料。长期偏料应检查下列情况（ ）。",
   "ans": "ABCD",
   "opts": [{
-    "title": {
-      "title": "探尺零位是否准确",
-      "value": 0,
-      "checked": 0
-    },
+    "title": "探尺零位是否准确",
     "value": 0,
     "checked": 0
   }, {
-    "title": {
-      "title": "炉身是否结瘤",
-      "value": 1,
-      "checked": 0
-    },
+    "title": "炉身是否结瘤",
     "value": 1,
     "checked": 0
   }, {
-    "title": {
-      "title": "布料器运转是否正常，大、小料钟中心位置是否偏移",
-      "value": 2,
-      "checked": 0
-    },
+    "title": "布料器运转是否正常，大、小料钟中心位置是否偏移",
     "value": 2,
     "checked": 0
   }, {
-    "title": {
-      "title": "炉喉钢砖是否严重变形、损坏，查出问题及时纠正和处理",
-      "value": 3,
-      "checked": 0
-    },
+    "title": "炉喉钢砖是否严重变形、损坏，查出问题及时纠正和处理",
     "value": 3,
     "checked": 0
   }]
@@ -4088,35 +3480,19 @@ var ltyl = [{
   "title": "影响矿石还原性的主要因素有（ ）。",
   "ans": "ABC",
   "opts": [{
-    "title": {
-      "title": "矿石本身的致密程度",
-      "value": 0,
-      "checked": 0
-    },
+    "title": "矿石本身的致密程度",
     "value": 0,
     "checked": 0
   }, {
-    "title": {
-      "title": "矿石本身的粒度",
-      "value": 1,
-      "checked": 0
-    },
+    "title": "矿石本身的粒度",
     "value": 1,
     "checked": 0
   }, {
-    "title": {
-      "title": "气孔度",
-      "value": 2,
-      "checked": 0
-    },
+    "title": "气孔度",
     "value": 2,
     "checked": 0
   }, {
-    "title": {
-      "title": "矿石品位",
-      "value": 3,
-      "checked": 0
-    },
+    "title": "矿石品位",
     "value": 3,
     "checked": 0
   }]
@@ -4126,35 +3502,19 @@ var ltyl = [{
   "title": "高炉送风制度应考虑的原则是（ ）。",
   "ans": "ACD",
   "opts": [{
-    "title": {
-      "title": "稳定使用合理的大风量是选择送风制度的出发点",
-      "value": 0,
-      "checked": 0
-    },
+    "title": "稳定使用合理的大风量是选择送风制度的出发点",
     "value": 0,
     "checked": 0
   }, {
-    "title": {
-      "title": "应与料柱透气性相适应，维持一个较高的全压差",
-      "value": 1,
-      "checked": 0
-    },
+    "title": "应与料柱透气性相适应，维持一个较高的全压差",
     "value": 1,
     "checked": 0
   }, {
-    "title": {
-      "title": "形成良好炉缸工作状态，得到合理煤气分布",
-      "value": 2,
-      "checked": 0
-    },
+    "title": "形成良好炉缸工作状态，得到合理煤气分布",
     "value": 2,
     "checked": 0
   }, {
-    "title": {
-      "title": "充分发挥鼓风机能力",
-      "value": 3,
-      "checked": 0
-    },
+    "title": "充分发挥鼓风机能力",
     "value": 3,
     "checked": 0
   }]
@@ -4164,35 +3524,19 @@ var ltyl = [{
   "title": "理查特区域热平衡图解根据高炉内（ ）特点创立的。",
   "ans": "AB",
   "opts": [{
-    "title": {
-      "title": "热交换",
-      "value": 0,
-      "checked": 0
-    },
+    "title": "热交换",
     "value": 0,
     "checked": 0
   }, {
-    "title": {
-      "title": "热平衡",
-      "value": 1,
-      "checked": 0
-    },
+    "title": "热平衡",
     "value": 1,
     "checked": 0
   }, {
-    "title": {
-      "title": "物料平衡",
-      "value": 2,
-      "checked": 0
-    },
+    "title": "物料平衡",
     "value": 2,
     "checked": 0
   }, {
-    "title": {
-      "title": "化学平衡",
-      "value": 3,
-      "checked": 0
-    },
+    "title": "化学平衡",
     "value": 3,
     "checked": 0
   }]
@@ -4202,35 +3546,19 @@ var ltyl = [{
   "title": "第三种编制全炉热平衡的方法，其热收入项只限于（ ）。",
   "ans": "AD",
   "opts": [{
-    "title": {
-      "title": "燃烧带内碳氧化成CO放出的热量",
-      "value": 0,
-      "checked": 0
-    },
+    "title": "燃烧带内碳氧化成CO放出的热量",
     "value": 0,
     "checked": 0
   }, {
-    "title": {
-      "title": "直接还原中C氧化成CO放出的热量",
-      "value": 1,
-      "checked": 0
-    },
+    "title": "直接还原中C氧化成CO放出的热量",
     "value": 1,
     "checked": 0
   }, {
-    "title": {
-      "title": "间接还原中CO氧化成CO2放出的热量",
-      "value": 2,
-      "checked": 0
-    },
+    "title": "间接还原中CO氧化成CO2放出的热量",
     "value": 2,
     "checked": 0
   }, {
-    "title": {
-      "title": "热风带入的热量",
-      "value": 3,
-      "checked": 0
-    },
+    "title": "热风带入的热量",
     "value": 3,
     "checked": 0
   }]
@@ -4240,35 +3568,19 @@ var ltyl = [{
   "title": "关于富氧鼓风那些描述正确（ ）。",
   "ans": "ABD",
   "opts": [{
-    "title": {
-      "title": "单位生铁煤气生成量减少，允许提高冶炼强度，增加产量",
-      "value": 0,
-      "checked": 0
-    },
+    "title": "单位生铁煤气生成量减少，允许提高冶炼强度，增加产量",
     "value": 0,
     "checked": 0
   }, {
-    "title": {
-      "title": "单位重量焦炭燃烧生成的煤气量减少，可改善炉内热能利用，减低炉顶煤气温度",
-      "value": 1,
-      "checked": 0
-    },
+    "title": "单位重量焦炭燃烧生成的煤气量减少，可改善炉内热能利用，减低炉顶煤气温度",
     "value": 1,
     "checked": 0
   }, {
-    "title": {
-      "title": "单位生铁煤气生成量减少，炉顶煤气发热值降低",
-      "value": 2,
-      "checked": 0
-    },
+    "title": "单位生铁煤气生成量减少，炉顶煤气发热值降低",
     "value": 2,
     "checked": 0
   }, {
-    "title": {
-      "title": "理论燃烧温度升高，炉缸热量集中，利于冶炼反应进行",
-      "value": 3,
-      "checked": 0
-    },
+    "title": "理论燃烧温度升高，炉缸热量集中，利于冶炼反应进行",
     "value": 3,
     "checked": 0
   }]
@@ -4278,35 +3590,19 @@ var ltyl = [{
   "title": "可引起风口前燃烧带扩张的因素有（ ）。",
   "ans": "BD",
   "opts": [{
-    "title": {
-      "title": "提高风温",
-      "value": 0,
-      "checked": 0
-    },
+    "title": "提高风温",
     "value": 0,
     "checked": 0
   }, {
-    "title": {
-      "title": "提高风量",
-      "value": 1,
-      "checked": 0
-    },
+    "title": "提高风量",
     "value": 1,
     "checked": 0
   }, {
-    "title": {
-      "title": "提高富氧量",
-      "value": 2,
-      "checked": 0
-    },
+    "title": "提高富氧量",
     "value": 2,
     "checked": 0
   }, {
-    "title": {
-      "title": "加湿鼓风",
-      "value": 3,
-      "checked": 0
-    },
+    "title": "加湿鼓风",
     "value": 3,
     "checked": 0
   }]
@@ -4316,35 +3612,19 @@ var ltyl = [{
   "title": "未燃的喷吹煤粉在高炉内的行为包括（ ）。",
   "ans": "ABCD",
   "opts": [{
-    "title": {
-      "title": "参与碳素气化反应与渗碳反应",
-      "value": 0,
-      "checked": 0
-    },
+    "title": "参与碳素气化反应与渗碳反应",
     "value": 0,
     "checked": 0
   }, {
-    "title": {
-      "title": "混在渣中，影响渣的流动性",
-      "value": 1,
-      "checked": 0
-    },
+    "title": "混在渣中，影响渣的流动性",
     "value": 1,
     "checked": 0
   }, {
-    "title": {
-      "title": "沉积在软熔带和料柱中，恶化透气性",
-      "value": 2,
-      "checked": 0
-    },
+    "title": "沉积在软熔带和料柱中，恶化透气性",
     "value": 2,
     "checked": 0
   }, {
-    "title": {
-      "title": "随煤气逸出炉外",
-      "value": 3,
-      "checked": 0
-    },
+    "title": "随煤气逸出炉外",
     "value": 3,
     "checked": 0
   }]
@@ -4354,35 +3634,19 @@ var ltyl = [{
   "title": "衡量和评价炉前操作水平的主要指标是（ ）。",
   "ans": "ABCD",
   "opts": [{
-    "title": {
-      "title": "出铁正点率",
-      "value": 0,
-      "checked": 0
-    },
+    "title": "出铁正点率",
     "value": 0,
     "checked": 0
   }, {
-    "title": {
-      "title": "铁口合格率",
-      "value": 1,
-      "checked": 0
-    },
+    "title": "铁口合格率",
     "value": 1,
     "checked": 0
   }, {
-    "title": {
-      "title": "铁量差",
-      "value": 2,
-      "checked": 0
-    },
+    "title": "铁量差",
     "value": 2,
     "checked": 0
   }, {
-    "title": {
-      "title": "上下渣比",
-      "value": 3,
-      "checked": 0
-    },
+    "title": "上下渣比",
     "value": 3,
     "checked": 0
   }]
@@ -4392,35 +3656,19 @@ var ltyl = [{
   "title": "煤粉的燃烧分为三个阶段（ ）。",
   "ans": "ABC",
   "opts": [{
-    "title": {
-      "title": "加热",
-      "value": 0,
-      "checked": 0
-    },
+    "title": "加热",
     "value": 0,
     "checked": 0
   }, {
-    "title": {
-      "title": "挥发分挥发",
-      "value": 1,
-      "checked": 0
-    },
+    "title": "挥发分挥发",
     "value": 1,
     "checked": 0
   }, {
-    "title": {
-      "title": "燃烧",
-      "value": 2,
-      "checked": 0
-    },
+    "title": "燃烧",
     "value": 2,
     "checked": 0
   }, {
-    "title": {
-      "title": "干馏",
-      "value": 3,
-      "checked": 0
-    },
+    "title": "干馏",
     "value": 3,
     "checked": 0
   }]
@@ -4430,35 +3678,19 @@ var ltyl = [{
   "title": "生铁进行大量渗碳的部位是（ ）。",
   "ans": "CD",
   "opts": [{
-    "title": {
-      "title": "炉身",
-      "value": 0,
-      "checked": 0
-    },
+    "title": "炉身",
     "value": 0,
     "checked": 0
   }, {
-    "title": {
-      "title": "炉腰",
-      "value": 1,
-      "checked": 0
-    },
+    "title": "炉腰",
     "value": 1,
     "checked": 0
   }, {
-    "title": {
-      "title": "炉缸",
-      "value": 2,
-      "checked": 0
-    },
+    "title": "炉缸",
     "value": 2,
     "checked": 0
   }, {
-    "title": {
-      "title": "炉腹",
-      "value": 3,
-      "checked": 0
-    },
+    "title": "炉腹",
     "value": 3,
     "checked": 0
   }]
@@ -4468,35 +3700,19 @@ var ltyl = [{
   "title": "关于高炉内热交换的过程，描述正确的有（ ）。",
   "ans": "ABCD",
   "opts": [{
-    "title": {
-      "title": "高炉内的热量传输以对流传热为主，只是在高温区才考虑辐射传热；在凝聚相内则进行传导传热",
-      "value": 0,
-      "checked": 0
-    },
+    "title": "高炉内的热量传输以对流传热为主，只是在高温区才考虑辐射传热；在凝聚相内则进行传导传热",
     "value": 0,
     "checked": 0
   }, {
-    "title": {
-      "title": "在高炉的上部炉料的水当量小于煤气的水当量",
-      "value": 1,
-      "checked": 0
-    },
+    "title": "在高炉的上部炉料的水当量小于煤气的水当量",
     "value": 1,
     "checked": 0
   }, {
-    "title": {
-      "title": "在高炉的下部，炉料的水当量远远大于煤气的水当量",
-      "value": 2,
-      "checked": 0
-    },
+    "title": "在高炉的下部，炉料的水当量远远大于煤气的水当量",
     "value": 2,
     "checked": 0
   }, {
-    "title": {
-      "title": "在高炉中部有一段炉料的水当量约等于煤气的水当量，但此时一些放热与吸热过程同时激烈进行，维持了炉料温度不变化",
-      "value": 3,
-      "checked": 0
-    },
+    "title": "在高炉中部有一段炉料的水当量约等于煤气的水当量，但此时一些放热与吸热过程同时激烈进行，维持了炉料温度不变化",
     "value": 3,
     "checked": 0
   }]
@@ -4506,35 +3722,19 @@ var ltyl = [{
   "title": "初渣中高FeO的低熔点化合物量很大时，会造成（ ）。",
   "ans": "ABC",
   "opts": [{
-    "title": {
-      "title": "直接还原增加",
-      "value": 0,
-      "checked": 0
-    },
+    "title": "直接还原增加",
     "value": 0,
     "checked": 0
   }, {
-    "title": {
-      "title": "软熔带位置升高",
-      "value": 1,
-      "checked": 0
-    },
+    "title": "软熔带位置升高",
     "value": 1,
     "checked": 0
   }, {
-    "title": {
-      "title": "煤气阻力增加",
-      "value": 2,
-      "checked": 0
-    },
+    "title": "煤气阻力增加",
     "value": 2,
     "checked": 0
   }, {
-    "title": {
-      "title": "软熔带高度增加",
-      "value": 3,
-      "checked": 0
-    },
+    "title": "软熔带高度增加",
     "value": 3,
     "checked": 0
   }]
@@ -4544,35 +3744,19 @@ var ltyl = [{
   "title": "热风温度每提高100℃，对焦比和产量的影响正确的是（ ）。",
   "ans": "AD",
   "opts": [{
-    "title": {
-      "title": "焦比降低4－7％",
-      "value": 0,
-      "checked": 0
-    },
+    "title": "焦比降低4－7％",
     "value": 0,
     "checked": 0
   }, {
-    "title": {
-      "title": "焦比降低3－6％",
-      "value": 1,
-      "checked": 0
-    },
+    "title": "焦比降低3－6％",
     "value": 1,
     "checked": 0
   }, {
-    "title": {
-      "title": "增产1－2％",
-      "value": 2,
-      "checked": 0
-    },
+    "title": "增产1－2％",
     "value": 2,
     "checked": 0
   }, {
-    "title": {
-      "title": "增产3－5％",
-      "value": 3,
-      "checked": 0
-    },
+    "title": "增产3－5％",
     "value": 3,
     "checked": 0
   }]
@@ -4582,35 +3766,19 @@ var ltyl = [{
   "title": "要求矿石的成分要稳定，是指（ ）稳定。",
   "ans": "AB",
   "opts": [{
-    "title": {
-      "title": "ＴFe",
-      "value": 0,
-      "checked": 0
-    },
+    "title": "ＴFe",
     "value": 0,
     "checked": 0
   }, {
-    "title": {
-      "title": "碱度",
-      "value": 1,
-      "checked": 0
-    },
+    "title": "碱度",
     "value": 1,
     "checked": 0
   }, {
-    "title": {
-      "title": "SiO2",
-      "value": 2,
-      "checked": 0
-    },
+    "title": "SiO2",
     "value": 2,
     "checked": 0
   }, {
-    "title": {
-      "title": "Al2O3",
-      "value": 3,
-      "checked": 0
-    },
+    "title": "Al2O3",
     "value": 3,
     "checked": 0
   }]
@@ -4620,35 +3788,19 @@ var ltyl = [{
   "title": "烧结矿中的Al2O3主要存在于（ ）中。",
   "ans": "ABC",
   "opts": [{
-    "title": {
-      "title": "黄长石",
-      "value": 0,
-      "checked": 0
-    },
+    "title": "黄长石",
     "value": 0,
     "checked": 0
   }, {
-    "title": {
-      "title": "铁酸钙",
-      "value": 1,
-      "checked": 0
-    },
+    "title": "铁酸钙",
     "value": 1,
     "checked": 0
   }, {
-    "title": {
-      "title": "硅酸盐渣相",
-      "value": 2,
-      "checked": 0
-    },
+    "title": "硅酸盐渣相",
     "value": 2,
     "checked": 0
   }, {
-    "title": {
-      "title": "硅酸钙",
-      "value": 3,
-      "checked": 0
-    },
+    "title": "硅酸钙",
     "value": 3,
     "checked": 0
   }]
@@ -4658,35 +3810,19 @@ var ltyl = [{
   "title": "炉渣的表面性质指的是（ ）。",
   "ans": "AC",
   "opts": [{
-    "title": {
-      "title": "液态炉渣与煤气间的表面张力",
-      "value": 0,
-      "checked": 0
-    },
+    "title": "液态炉渣与煤气间的表面张力",
     "value": 0,
     "checked": 0
   }, {
-    "title": {
-      "title": "煤气间与铁水的表面张力",
-      "value": 1,
-      "checked": 0
-    },
+    "title": "煤气间与铁水的表面张力",
     "value": 1,
     "checked": 0
   }, {
-    "title": {
-      "title": "渣铁间的界面张力",
-      "value": 2,
-      "checked": 0
-    },
+    "title": "渣铁间的界面张力",
     "value": 2,
     "checked": 0
   }, {
-    "title": {
-      "title": "液态炉渣与焦炭的表面张力",
-      "value": 3,
-      "checked": 0
-    },
+    "title": "液态炉渣与焦炭的表面张力",
     "value": 3,
     "checked": 0
   }]
@@ -4696,35 +3832,19 @@ var ltyl = [{
   "title": "风温提高后（ ）。",
   "ans": "ABCD",
   "opts": [{
-    "title": {
-      "title": "风口前燃烧碳量减",
-      "value": 0,
-      "checked": 0
-    },
+    "title": "风口前燃烧碳量减",
     "value": 0,
     "checked": 0
   }, {
-    "title": {
-      "title": "风口区煤气量减少",
-      "value": 1,
-      "checked": 0
-    },
+    "title": "风口区煤气量减少",
     "value": 1,
     "checked": 0
   }, {
-    "title": {
-      "title": "煤气和炉料的水当量比值下降",
-      "value": 2,
-      "checked": 0
-    },
+    "title": "煤气和炉料的水当量比值下降",
     "value": 2,
     "checked": 0
   }, {
-    "title": {
-      "title": "炉身煤气温度下降",
-      "value": 3,
-      "checked": 0
-    },
+    "title": "炉身煤气温度下降",
     "value": 3,
     "checked": 0
   }]
@@ -4734,35 +3854,19 @@ var ltyl = [{
   "title": "在（ ）情况下须调整焦炭负荷。",
   "ans": "ABCD",
   "opts": [{
-    "title": {
-      "title": "休风4小时以上",
-      "value": 0,
-      "checked": 0
-    },
+    "title": "休风4小时以上",
     "value": 0,
     "checked": 0
   }, {
-    "title": {
-      "title": "高炉因故需采用倒装",
-      "value": 1,
-      "checked": 0
-    },
+    "title": "高炉因故需采用倒装",
     "value": 1,
     "checked": 0
   }, {
-    "title": {
-      "title": "减少或停止喷吹燃料",
-      "value": 2,
-      "checked": 0
-    },
+    "title": "减少或停止喷吹燃料",
     "value": 2,
     "checked": 0
   }, {
-    "title": {
-      "title": "焦炭雨淋",
-      "value": 3,
-      "checked": 0
-    },
+    "title": "焦炭雨淋",
     "value": 3,
     "checked": 0
   }]
@@ -4772,35 +3876,19 @@ var ltyl = [{
   "title": "高炉强化冶炼的方式有（ ）。",
   "ans": "ABCD",
   "opts": [{
-    "title": {
-      "title": "精料",
-      "value": 0,
-      "checked": 0
-    },
+    "title": "精料",
     "value": 0,
     "checked": 0
   }, {
-    "title": {
-      "title": "高风温操作",
-      "value": 1,
-      "checked": 0
-    },
+    "title": "高风温操作",
     "value": 1,
     "checked": 0
   }, {
-    "title": {
-      "title": "高压操作",
-      "value": 2,
-      "checked": 0
-    },
+    "title": "高压操作",
     "value": 2,
     "checked": 0
   }, {
-    "title": {
-      "title": "综合鼓风",
-      "value": 3,
-      "checked": 0
-    },
+    "title": "综合鼓风",
     "value": 3,
     "checked": 0
   }]
@@ -4810,35 +3898,19 @@ var ltyl = [{
   "title": "煤气在料柱中运动的阻力损失随（ ）而升高。",
   "ans": "AD",
   "opts": [{
-    "title": {
-      "title": "煤气流体密度的升高",
-      "value": 0,
-      "checked": 0
-    },
+    "title": "煤气流体密度的升高",
     "value": 0,
     "checked": 0
   }, {
-    "title": {
-      "title": "形状系数增大",
-      "value": 1,
-      "checked": 0
-    },
+    "title": "形状系数增大",
     "value": 1,
     "checked": 0
   }, {
-    "title": {
-      "title": "煤气粘性系数减小",
-      "value": 2,
-      "checked": 0
-    },
+    "title": "煤气粘性系数减小",
     "value": 2,
     "checked": 0
   }, {
-    "title": {
-      "title": "煤气流经散料床层的表观平均流速增大",
-      "value": 3,
-      "checked": 0
-    },
+    "title": "煤气流经散料床层的表观平均流速增大",
     "value": 3,
     "checked": 0
   }]
@@ -4848,35 +3920,19 @@ var ltyl = [{
   "title": "出铁出渣管理主要内容是（ ）。",
   "ans": "ABD",
   "opts": [{
-    "title": {
-      "title": "出铁速度",
-      "value": 0,
-      "checked": 0
-    },
+    "title": "出铁速度",
     "value": 0,
     "checked": 0
   }, {
-    "title": {
-      "title": "见渣时间",
-      "value": 1,
-      "checked": 0
-    },
+    "title": "见渣时间",
     "value": 1,
     "checked": 0
   }, {
-    "title": {
-      "title": "堵口时间",
-      "value": 2,
-      "checked": 0
-    },
+    "title": "堵口时间",
     "value": 2,
     "checked": 0
   }, {
-    "title": {
-      "title": "铁口深度和打泥量",
-      "value": 3,
-      "checked": 0
-    },
+    "title": "铁口深度和打泥量",
     "value": 3,
     "checked": 0
   }]
@@ -4886,35 +3942,19 @@ var ltyl = [{
   "title": "高炉长寿的技术包括（ ）。",
   "ans": "ABCD",
   "opts": [{
-    "title": {
-      "title": "硬质压入技术",
-      "value": 0,
-      "checked": 0
-    },
+    "title": "硬质压入技术",
     "value": 0,
     "checked": 0
   }, {
-    "title": {
-      "title": "炉缸灌浆技术",
-      "value": 1,
-      "checked": 0
-    },
+    "title": "炉缸灌浆技术",
     "value": 1,
     "checked": 0
   }, {
-    "title": {
-      "title": "钛矿护炉技术",
-      "value": 2,
-      "checked": 0
-    },
+    "title": "钛矿护炉技术",
     "value": 2,
     "checked": 0
   }, {
-    "title": {
-      "title": "炉身上部喷涂技术",
-      "value": 3,
-      "checked": 0
-    },
+    "title": "炉身上部喷涂技术",
     "value": 3,
     "checked": 0
   }]
@@ -4924,35 +3964,19 @@ var ltyl = [{
   "title": "高炉短期控制的数学模型（ ）。",
   "ans": "ABC",
   "opts": [{
-    "title": {
-      "title": "炉热指数模型",
-      "value": 0,
-      "checked": 0
-    },
+    "title": "炉热指数模型",
     "value": 0,
     "checked": 0
   }, {
-    "title": {
-      "title": "含硅量预报模型",
-      "value": 1,
-      "checked": 0
-    },
+    "title": "含硅量预报模型",
     "value": 1,
     "checked": 0
   }, {
-    "title": {
-      "title": "布料控制模型",
-      "value": 2,
-      "checked": 0
-    },
+    "title": "布料控制模型",
     "value": 2,
     "checked": 0
   }, {
-    "title": {
-      "title": "专家系统",
-      "value": 3,
-      "checked": 0
-    },
+    "title": "专家系统",
     "value": 3,
     "checked": 0
   }]
@@ -4962,35 +3986,19 @@ var ltyl = [{
   "title": "煤中灰分主要成分是（ ）。",
   "ans": "ABCD",
   "opts": [{
-    "title": {
-      "title": "SiO2",
-      "value": 0,
-      "checked": 0
-    },
+    "title": "SiO2",
     "value": 0,
     "checked": 0
   }, {
-    "title": {
-      "title": "Fe2O3",
-      "value": 1,
-      "checked": 0
-    },
+    "title": "Fe2O3",
     "value": 1,
     "checked": 0
   }, {
-    "title": {
-      "title": "Al2O3",
-      "value": 2,
-      "checked": 0
-    },
+    "title": "Al2O3",
     "value": 2,
     "checked": 0
   }, {
-    "title": {
-      "title": "CaO",
-      "value": 3,
-      "checked": 0
-    },
+    "title": "CaO",
     "value": 3,
     "checked": 0
   }]
@@ -5000,35 +4008,19 @@ var ltyl = [{
   "title": "引起高炉局部管道行程的主要原因有（ ）。",
   "ans": "ABCD",
   "opts": [{
-    "title": {
-      "title": "煤气流速过快",
-      "value": 0,
-      "checked": 0
-    },
+    "title": "煤气流速过快",
     "value": 0,
     "checked": 0
   }, {
-    "title": {
-      "title": "炉料粒度过小",
-      "value": 1,
-      "checked": 0
-    },
+    "title": "炉料粒度过小",
     "value": 1,
     "checked": 0
   }, {
-    "title": {
-      "title": "炉料偏析严重",
-      "value": 2,
-      "checked": 0
-    },
+    "title": "炉料偏析严重",
     "value": 2,
     "checked": 0
   }, {
-    "title": {
-      "title": "炉喉及炉身内型过于凸凹不平",
-      "value": 3,
-      "checked": 0
-    },
+    "title": "炉喉及炉身内型过于凸凹不平",
     "value": 3,
     "checked": 0
   }]
@@ -5038,35 +4030,19 @@ var ltyl = [{
   "title": "铁口数目主要取决于（ ）。",
   "ans": "ABC",
   "opts": [{
-    "title": {
-      "title": "炉容",
-      "value": 0,
-      "checked": 0
-    },
+    "title": "炉容",
     "value": 0,
     "checked": 0
   }, {
-    "title": {
-      "title": "产量",
-      "value": 1,
-      "checked": 0
-    },
+    "title": "产量",
     "value": 1,
     "checked": 0
   }, {
-    "title": {
-      "title": "渣铁沟维修时间",
-      "value": 2,
-      "checked": 0
-    },
+    "title": "渣铁沟维修时间",
     "value": 2,
     "checked": 0
   }, {
-    "title": {
-      "title": "炮泥质量",
-      "value": 3,
-      "checked": 0
-    },
+    "title": "炮泥质量",
     "value": 3,
     "checked": 0
   }]
@@ -5076,35 +4052,19 @@ var ltyl = [{
   "title": "炉渣结构理论存在两种理论学说（ ）。",
   "ans": "AC",
   "opts": [{
-    "title": {
-      "title": "分子理论",
-      "value": 0,
-      "checked": 0
-    },
+    "title": "分子理论",
     "value": 0,
     "checked": 0
   }, {
-    "title": {
-      "title": "原子理论",
-      "value": 1,
-      "checked": 0
-    },
+    "title": "原子理论",
     "value": 1,
     "checked": 0
   }, {
-    "title": {
-      "title": "离子理论",
-      "value": 2,
-      "checked": 0
-    },
+    "title": "离子理论",
     "value": 2,
     "checked": 0
   }, {
-    "title": {
-      "title": "质子理论",
-      "value": 3,
-      "checked": 0
-    },
+    "title": "质子理论",
     "value": 3,
     "checked": 0
   }]
@@ -5114,35 +4074,19 @@ var ltyl = [{
   "title": "关于铁矿石中有害杂质的危害叙述正确的是（ ）",
   "ans": "BCD",
   "opts": [{
-    "title": {
-      "title": "Zn800℃挥发，上升后冷凝沉积于炉墙，使炉墙膨胀，破坏炉壳",
-      "value": 0,
-      "checked": 0
-    },
+    "title": "Zn800℃挥发，上升后冷凝沉积于炉墙，使炉墙膨胀，破坏炉壳",
     "value": 0,
     "checked": 0
   }, {
-    "title": {
-      "title": "Pb易还原，易沉于炉底，破坏砖衬",
-      "value": 1,
-      "checked": 0
-    },
+    "title": "Pb易还原，易沉于炉底，破坏砖衬",
     "value": 1,
     "checked": 0
   }, {
-    "title": {
-      "title": "砷使钢冷脆，不易焊接",
-      "value": 2,
-      "checked": 0
-    },
+    "title": "砷使钢冷脆，不易焊接",
     "value": 2,
     "checked": 0
   }, {
-    "title": {
-      "title": "钛降低钢的耐磨性",
-      "value": 3,
-      "checked": 0
-    },
+    "title": "钛降低钢的耐磨性",
     "value": 3,
     "checked": 0
   }]
@@ -5152,35 +4096,19 @@ var ltyl = [{
   "title": "高炉冶炼过程中，（ ）有利于生铁的含C量升高。",
   "ans": "AB",
   "opts": [{
-    "title": {
-      "title": "炉内压力升高",
-      "value": 0,
-      "checked": 0
-    },
+    "title": "炉内压力升高",
     "value": 0,
     "checked": 0
   }, {
-    "title": {
-      "title": "煤气中CO含量升高",
-      "value": 1,
-      "checked": 0
-    },
+    "title": "煤气中CO含量升高",
     "value": 1,
     "checked": 0
   }, {
-    "title": {
-      "title": "煤气中H2含量升高",
-      "value": 2,
-      "checked": 0
-    },
+    "title": "煤气中H2含量升高",
     "value": 2,
     "checked": 0
   }, {
-    "title": {
-      "title": "﹝S﹞含量升高",
-      "value": 3,
-      "checked": 0
-    },
+    "title": "﹝S﹞含量升高",
     "value": 3,
     "checked": 0
   }]
@@ -5190,35 +4118,19 @@ var ltyl = [{
   "title": "关于高炉四大操作制度的评价正确的是（ ）。",
   "ans": "ABC",
   "opts": [{
-    "title": {
-      "title": "送风制度对炉缸工作状态和高炉顺行是决定性因素",
-      "value": 0,
-      "checked": 0
-    },
+    "title": "送风制度对炉缸工作状态和高炉顺行是决定性因素",
     "value": 0,
     "checked": 0
   }, {
-    "title": {
-      "title": "造渣制度合理是热制度适宜的基础",
-      "value": 1,
-      "checked": 0
-    },
+    "title": "造渣制度合理是热制度适宜的基础",
     "value": 1,
     "checked": 0
   }, {
-    "title": {
-      "title": "热制度的稳定是保证操作炉型规整合理的前提",
-      "value": 2,
-      "checked": 0
-    },
+    "title": "热制度的稳定是保证操作炉型规整合理的前提",
     "value": 2,
     "checked": 0
   }, {
-    "title": {
-      "title": "装料制度是高炉操作的核心技术和最重要的因素",
-      "value": 3,
-      "checked": 0
-    },
+    "title": "装料制度是高炉操作的核心技术和最重要的因素",
     "value": 3,
     "checked": 0
   }]
@@ -5228,35 +4140,19 @@ var ltyl = [{
   "title": "炉缸热制度贯彻的两条原则是（ ）。",
   "ans": "AB",
   "opts": [{
-    "title": {
-      "title": "低燃耗",
-      "value": 0,
-      "checked": 0
-    },
+    "title": "低燃耗",
     "value": 0,
     "checked": 0
   }, {
-    "title": {
-      "title": "稳定炉温",
-      "value": 1,
-      "checked": 0
-    },
+    "title": "稳定炉温",
     "value": 1,
     "checked": 0
   }, {
-    "title": {
-      "title": "高产",
-      "value": 2,
-      "checked": 0
-    },
+    "title": "高产",
     "value": 2,
     "checked": 0
   }, {
-    "title": {
-      "title": "高理论燃烧温度",
-      "value": 3,
-      "checked": 0
-    },
+    "title": "高理论燃烧温度",
     "value": 3,
     "checked": 0
   }]
@@ -5266,35 +4162,19 @@ var ltyl = [{
   "title": "高炉生产的主要原料是（ ）。",
   "ans": "ABCD",
   "opts": [{
-    "title": {
-      "title": "铁矿石及其代用品",
-      "value": 0,
-      "checked": 0
-    },
+    "title": "铁矿石及其代用品",
     "value": 0,
     "checked": 0
   }, {
-    "title": {
-      "title": "锰矿石",
-      "value": 1,
-      "checked": 0
-    },
+    "title": "锰矿石",
     "value": 1,
     "checked": 0
   }, {
-    "title": {
-      "title": "燃料",
-      "value": 2,
-      "checked": 0
-    },
+    "title": "燃料",
     "value": 2,
     "checked": 0
   }, {
-    "title": {
-      "title": "熔剂",
-      "value": 3,
-      "checked": 0
-    },
+    "title": "熔剂",
     "value": 3,
     "checked": 0
   }]
@@ -5304,35 +4184,19 @@ var ltyl = [{
   "title": "影响高炉寿命的因素有（ ）。",
   "ans": "ABCD",
   "opts": [{
-    "title": {
-      "title": "冷却设备",
-      "value": 0,
-      "checked": 0
-    },
+    "title": "冷却设备",
     "value": 0,
     "checked": 0
   }, {
-    "title": {
-      "title": "冷却制度",
-      "value": 1,
-      "checked": 0
-    },
+    "title": "冷却制度",
     "value": 1,
     "checked": 0
   }, {
-    "title": {
-      "title": "护炉与补炉",
-      "value": 2,
-      "checked": 0
-    },
+    "title": "护炉与补炉",
     "value": 2,
     "checked": 0
   }, {
-    "title": {
-      "title": "操作制度",
-      "value": 3,
-      "checked": 0
-    },
+    "title": "操作制度",
     "value": 3,
     "checked": 0
   }]
@@ -5342,35 +4206,19 @@ var ltyl = [{
   "title": "焦炭的化学性质包括（ ）。",
   "ans": "ABCD",
   "opts": [{
-    "title": {
-      "title": "反应性",
-      "value": 0,
-      "checked": 0
-    },
+    "title": "反应性",
     "value": 0,
     "checked": 0
   }, {
-    "title": {
-      "title": "着火点",
-      "value": 1,
-      "checked": 0
-    },
+    "title": "着火点",
     "value": 1,
     "checked": 0
   }, {
-    "title": {
-      "title": "发热量",
-      "value": 2,
-      "checked": 0
-    },
+    "title": "发热量",
     "value": 2,
     "checked": 0
   }, {
-    "title": {
-      "title": "抗碱性",
-      "value": 3,
-      "checked": 0
-    },
+    "title": "抗碱性",
     "value": 3,
     "checked": 0
   }]
@@ -5380,35 +4228,19 @@ var ltyl = [{
   "title": "目前我国所使用的测定煤的着火温度的方法有（ ）。",
   "ans": "BC",
   "opts": [{
-    "title": {
-      "title": "测温法",
-      "value": 0,
-      "checked": 0
-    },
+    "title": "测温法",
     "value": 0,
     "checked": 0
   }, {
-    "title": {
-      "title": "体积膨胀法",
-      "value": 1,
-      "checked": 0
-    },
+    "title": "体积膨胀法",
     "value": 1,
     "checked": 0
   }, {
-    "title": {
-      "title": "温度实升法",
-      "value": 2,
-      "checked": 0
-    },
+    "title": "温度实升法",
     "value": 2,
     "checked": 0
   }, {
-    "title": {
-      "title": "感触法",
-      "value": 3,
-      "checked": 0
-    },
+    "title": "感触法",
     "value": 3,
     "checked": 0
   }]
@@ -5418,35 +4250,19 @@ var ltyl = [{
   "title": "高压操作有利于（ ）。",
   "ans": "ABD",
   "opts": [{
-    "title": {
-      "title": "提高产量",
-      "value": 0,
-      "checked": 0
-    },
+    "title": "提高产量",
     "value": 0,
     "checked": 0
   }, {
-    "title": {
-      "title": "加风",
-      "value": 1,
-      "checked": 0
-    },
+    "title": "加风",
     "value": 1,
     "checked": 0
   }, {
-    "title": {
-      "title": "增加吹损",
-      "value": 2,
-      "checked": 0
-    },
+    "title": "增加吹损",
     "value": 2,
     "checked": 0
   }, {
-    "title": {
-      "title": "压头损失降低",
-      "value": 3,
-      "checked": 0
-    },
+    "title": "压头损失降低",
     "value": 3,
     "checked": 0
   }]
@@ -5456,35 +4272,19 @@ var ltyl = [{
   "title": "下列哪些元素的还原在高炉内无法控制（ ）。",
   "ans": "ACD",
   "opts": [{
-    "title": {
-      "title": "P",
-      "value": 0,
-      "checked": 0
-    },
+    "title": "P",
     "value": 0,
     "checked": 0
   }, {
-    "title": {
-      "title": "V、Ti",
-      "value": 1,
-      "checked": 0
-    },
+    "title": "V、Ti",
     "value": 1,
     "checked": 0
   }, {
-    "title": {
-      "title": "Ni",
-      "value": 2,
-      "checked": 0
-    },
+    "title": "Ni",
     "value": 2,
     "checked": 0
   }, {
-    "title": {
-      "title": "Pb",
-      "value": 3,
-      "checked": 0
-    },
+    "title": "Pb",
     "value": 3,
     "checked": 0
   }]
@@ -5494,35 +4294,19 @@ var ltyl = [{
   "title": "高压操作的好处（ ）。",
   "ans": "ABC",
   "opts": [{
-    "title": {
-      "title": "煤气在炉内停留时间延长，有利于还原反应进行，有利于降低焦比",
-      "value": 0,
-      "checked": 0
-    },
+    "title": "煤气在炉内停留时间延长，有利于还原反应进行，有利于降低焦比",
     "value": 0,
     "checked": 0
   }, {
-    "title": {
-      "title": "有利于炉况稳定顺行",
-      "value": 1,
-      "checked": 0
-    },
+    "title": "有利于炉况稳定顺行",
     "value": 1,
     "checked": 0
   }, {
-    "title": {
-      "title": "炉尘量减少",
-      "value": 2,
-      "checked": 0
-    },
+    "title": "炉尘量减少",
     "value": 2,
     "checked": 0
   }, {
-    "title": {
-      "title": "边缘气流受到抑制",
-      "value": 3,
-      "checked": 0
-    },
+    "title": "边缘气流受到抑制",
     "value": 3,
     "checked": 0
   }]
@@ -5532,35 +4316,19 @@ var ltyl = [{
   "title": "提高焦炭质量的措施有（ ）。",
   "ans": "ABC",
   "opts": [{
-    "title": {
-      "title": "提高煤料的堆积密度",
-      "value": 0,
-      "checked": 0
-    },
+    "title": "提高煤料的堆积密度",
     "value": 0,
     "checked": 0
   }, {
-    "title": {
-      "title": "风选调湿粉碎工艺",
-      "value": 1,
-      "checked": 0
-    },
+    "title": "风选调湿粉碎工艺",
     "value": 1,
     "checked": 0
   }, {
-    "title": {
-      "title": "煤预热工艺",
-      "value": 2,
-      "checked": 0
-    },
+    "title": "煤预热工艺",
     "value": 2,
     "checked": 0
   }, {
-    "title": {
-      "title": "每加水控制工艺",
-      "value": 3,
-      "checked": 0
-    },
+    "title": "每加水控制工艺",
     "value": 3,
     "checked": 0
   }]
@@ -5570,35 +4338,19 @@ var ltyl = [{
   "title": "焦炭中硫的形态包括（ ）。",
   "ans": "ABC",
   "opts": [{
-    "title": {
-      "title": "无机硫化物",
-      "value": 0,
-      "checked": 0
-    },
+    "title": "无机硫化物",
     "value": 0,
     "checked": 0
   }, {
-    "title": {
-      "title": "硫酸盐硫",
-      "value": 1,
-      "checked": 0
-    },
+    "title": "硫酸盐硫",
     "value": 1,
     "checked": 0
   }, {
-    "title": {
-      "title": "有机硫",
-      "value": 2,
-      "checked": 0
-    },
+    "title": "有机硫",
     "value": 2,
     "checked": 0
   }, {
-    "title": {
-      "title": "游离硫",
-      "value": 3,
-      "checked": 0
-    },
+    "title": "游离硫",
     "value": 3,
     "checked": 0
   }]
@@ -5608,35 +4360,19 @@ var ltyl = [{
   "title": "高炉炼铁喷吹燃料分为以下几个阶段（ ）。",
   "ans": "ABC",
   "opts": [{
-    "title": {
-      "title": "制粉",
-      "value": 0,
-      "checked": 0
-    },
+    "title": "制粉",
     "value": 0,
     "checked": 0
   }, {
-    "title": {
-      "title": "输粉",
-      "value": 1,
-      "checked": 0
-    },
+    "title": "输粉",
     "value": 1,
     "checked": 0
   }, {
-    "title": {
-      "title": "喷吹",
-      "value": 2,
-      "checked": 0
-    },
+    "title": "喷吹",
     "value": 2,
     "checked": 0
   }, {
-    "title": {
-      "title": "煤气净化",
-      "value": 3,
-      "checked": 0
-    },
+    "title": "煤气净化",
     "value": 3,
     "checked": 0
   }]

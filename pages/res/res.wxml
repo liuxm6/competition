@@ -1,0 +1,12 @@
+<view class='qs_bg'>
+    <view style='position:relative;width:80%;margin:0 auto;padding-top:120px;'>
+      <image style='width:300px;height:180px;' src='../../assets/img/res.png'></image>
+
+      <text style='position:absolute;top:126px;left:42%;color:white'>{{title_msg}}</text>
+        <text style='position:absolute;top:200px;left:85px;color:white;font-size:16px;'>{{rmk}}</text>
+    </view>
+    <view style='position:relative;margin:60rpx auto;width:150px;'>
+        <image src='../../assets/img/btn_go.png' style='width:150px;height:39px;margin:0 auto;'></image>
+        <text style='position:absolute;color:white;font-size:16px;left:44px;top:8px;' bindtap='goClick'>{{title_btn_msg}}</text>
+    </view>
+</view>

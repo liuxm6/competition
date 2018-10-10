@@ -21,7 +21,8 @@ Page({
     multi_disabled:false,
     qs_cnt:0,
     right_cnt:0,
-    isUnderGoing:false
+    isUnderGoing:false,
+    rd_disabled:false
   },
   onLoad: function (options){
     var num = 5;
@@ -85,7 +86,6 @@ Page({
       return;
     }
     is_valid_click = false;
-
     var ischecked = this.convertAns(evt.detail.value);
     console.log(ischecked);
     var val = evt.detail.value;
@@ -101,12 +101,12 @@ Page({
 
     
     var right_cnt = isright ? this.data.right_cnt + 1 : this.data.right_cnt;
-    this.setData({ ischecked: ischecked, isright: isright, right_cnt: right_cnt });
+    this.setData({ ischecked: ischecked, isright: isright, right_cnt: right_cnt, rd_disabled:true });
 
-    ans_interval = setInterval(function () {
-      this.restart();
-      clearInterval(ans_interval);
-    }.bind(this), 500)
+    // ans_interval = setInterval(function () {
+    //   this.restart();
+    //   clearInterval(ans_interval);
+    // }.bind(this), 500)
 
   },
   onHide: function () {
@@ -190,6 +190,7 @@ Page({
 
       is_valid_click = true;
       this.setData({
+        rd_disabled:false,
         idx: curidx,
         ischecked: -1,
         isright: false,
@@ -244,8 +245,12 @@ Page({
         content: '总共' + this.data.qs_cnt + "题,您总共答对了" + this.data.right_cnt + "题",
         showCancel: false,
         success: function (res) {
-          wx.navigateBack({
-            delta: 1,
+          // wx.navigateBack({
+          //   delta: 1,
+          // })
+          //失败-重新挑战；成功-继续挑战
+          wx.navigateTo({
+            url: '../res/res?issuccess=1&step=1',
           })
         }
       })

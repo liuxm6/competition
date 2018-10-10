@@ -106,11 +106,11 @@ Page({
     console.log('222222222222');
   },
   onShow:function(){
-    console.log("onshow");
-    console.log(this.data.canShow);
+    // console.log("onshow");
+    // console.log(this.data.canShow);
     var pages = getCurrentPages();
     var len = pages.length;
-    console.log(pages[len-1]);
+    // console.log(pages[len-1]);
     // if(!this.data.canShow){
     //   wx.navigateTo({
     //     url: '../main/main?type=2',

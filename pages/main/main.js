@@ -162,22 +162,6 @@ Page({
     }
     return ret;
   }, 
-  convertAnsToIdx: function (res) {
-    var ret = '';
-    if (res.indexOf('0') != -1) {
-      ret += 'A';
-    }
-    if (res.indexOf('1') != -1) {
-      ret += 'B';
-    }
-    if (res.indexOf('2') != -1) {
-      ret += 'C';
-    }
-    if (res.indexOf('3') != -1) {
-      ret += 'D';
-    }
-    return ret;
-  },
   qsTimer:function(){
     var totalSecond =timerstamp;
 

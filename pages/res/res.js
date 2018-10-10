@@ -10,13 +10,14 @@ Page({
     title_btn_msg:''
   },
   onLoad: function (options){
-    console.log(options);
+    var issuccess = isNaN(options.issuccess) ? 0 : parseInt(options.issuccess);
+    console.log(issuccess);
     this.setData({
-      issuccess:options.issuccess,
+      issuccess:issuccess,
       step:options.step,
       title_msg:this.convertMsg(options.step),
-      rmk:options.issuccess?'恭喜你，挑战成功':'很遗憾，挑战失败',
-      title_btn_msg: options.issuccess?'继续挑战':'重新挑战'
+      rmk:issuccess?'恭喜你，挑战成功':'很遗憾，挑战失败',
+      title_btn_msg: issuccess?'继续挑战':'重新挑战'
     })
   },
   convertMsg:function(step){
@@ -42,13 +43,14 @@ Page({
   },
   goClick:function(){
     var issuccess = this.data.issuccess;
+    console.log(issuccess);
     if(issuccess){
       wx.navigateTo({
-        url: '../index/index?type=forward&step='+(this.data.step+1),
+        url: '../index/index?type=forward&step='+(this.data.step),
       })
     }else{
       wx.navigateTo({
-        url: '../index/index?type=repeat&step=' + this.data.step,
+        url: '../main/main?step=' + this.data.step,
       })
     }
   }

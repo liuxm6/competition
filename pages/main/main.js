@@ -22,14 +22,15 @@ Page({
     qs_cnt:0,
     right_cnt:0,
     isUnderGoing:false,
-    rd_disabled:false
+    rd_disabled:false,
+    step:0
   },
   onLoad: function (options){
     var num = 5;
     is_valid_click = true;
-    var qs_cnt = options.type ? options.type*5 : 5;
+    var qs_cnt = options.step ? options.step*5 : 5;
     var subjectList = util.getQsList(qs_cnt);
-    timerstamp = 10000;
+    timerstamp = 100;
     // qs_cnt+5;
 
     // watch = new Watch(this);
@@ -48,14 +49,18 @@ Page({
             values.options = "D"
           }
         }
-        lsit.push(subjectList[i]);
+      } else if (subjectList[i]['ans'].length == 1){
+        var ans = subjectList[i].ans;
+        var idxAns = (ans=='A')?0:(ans=='B'?1:(ans=='C'?2:3));
+        subjectList[i].idxAns = idxAns;
       }
+      lsit.push(subjectList[i]);
     }
     subjectList = lsit;
     console.log(subjectList);
     
-    this.setData({ subjectList: subjectList, qs_cnt: qs_cnt, curSubject: subjectList[0]});
-    console.log(this.data.isUnderGoing);
+    this.setData({ subjectList: subjectList, qs_cnt: qs_cnt, curSubject: subjectList[0],step:options.step});
+    // console.log(this.data.isUnderGoing);
     // watch.setData({
     //   isUnderGoing:true
     // })
@@ -115,10 +120,10 @@ Page({
     var right_cnt = isright ? this.data.right_cnt + 1 : this.data.right_cnt;
     this.setData({ ischecked: ischecked, isright: isright, right_cnt: right_cnt, rd_disabled:true });
 
-    // ans_interval = setInterval(function () {
-    //   this.restart();
-    //   clearInterval(ans_interval);
-    // }.bind(this), 500)
+    ans_interval = setInterval(function () {
+      this.restart();
+      clearInterval(ans_interval);
+    }.bind(this), 500)
 
   },
   onHide: function () {
@@ -127,24 +132,24 @@ Page({
   },
   onUnload: function () {
     // 生命周期函数--监听页面卸载
-    console.log("test1 onUnload");
-    var pages = getCurrentPages() // 获取页面栈
-    console.log(pages)
-    var prevPage = pages[pages.length - 2] // 上一个页面
-    console.log(prevPage.data.canShow);
-    var canShow = prevPage.data.canShow;
-    if(!canShow){
-      wx.showModal({
-        title: '您确定退出当前游戏吗?',
-        success: function (res) {
-          console.log(res);
-          if (res.confirm) {
-            return;
-          }
-        }
-      })
-      // this.showRes();
-    }
+    // console.log("test1 onUnload");
+    // var pages = getCurrentPages() // 获取页面栈
+    // console.log(pages)
+    // var prevPage = pages[pages.length - 2] // 上一个页面
+    // console.log(prevPage.data.canShow);
+    // var canShow = prevPage.data.canShow;
+    // if(!canShow){
+    //   wx.showModal({
+    //     title: '您确定退出当前游戏吗?',
+    //     success: function (res) {
+    //       console.log(res);
+    //       if (res.confirm) {
+    //         return;
+    //       }
+    //     }
+    //   })
+    //   // this.showRes();
+    // }
   },
   convertAns:function(res){
     var ret = '';
@@ -227,26 +232,28 @@ Page({
       right_cnt:right_cnt
     })
 
-    // ans_interval = setInterval(function () {
-    //   this.restart();
-    //   clearInterval(ans_interval);
-    // }.bind(this), 500)
+    ans_interval = setInterval(function () {
+      this.restart();
+      clearInterval(ans_interval);
+    }.bind(this), 500)
   },
   showRes:function(){
+    // var _this = this;
     var pages = getCurrentPages();
     var len = pages.length;
+    var qs_cnt = this.data.qs_cnt;
+    var right_cnt = this.data.right_cnt;
+    var step = this.data.step;
     if (pages && pages[len-1].route.indexOf("main/main")!=-1){
       wx.showModal({
-        title: '时间到',
-        content: '总共' + this.data.qs_cnt + "题,您总共答对了" + this.data.right_cnt + "题",
+        title: '提示',
+        content: '总共' + qs_cnt + "题,您总共答对了" + right_cnt + "题",
         showCancel: false,
         success: function (res) {
-          // wx.navigateBack({
-          //   delta: 1,
-          // })
           //失败-重新挑战；成功-继续挑战
-          wx.navigateTo({
-            url: '../res/res?issuccess=1&step=1',
+          var issuccess = right_cnt==qs_cnt?1:0;
+          wx.reLaunch({
+            url: '../res/res?issuccess='+issuccess+'&step='+step,
           })
         }
       })

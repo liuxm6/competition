@@ -23,8 +23,8 @@ Page({
     })
   },
   goMain:function(){
-    wx.navigateTo({
-      url: '../main/main?type=2',
+    wx.reLaunch({
+      url: '../main/main?step=1',
     })
   },
   onLoad: function () {
@@ -113,7 +113,7 @@ Page({
     // console.log(pages[len-1]);
     // if(!this.data.canShow){
     //   wx.navigateTo({
-    //     url: '../main/main?type=2',
+    //     url: '../main/main?step=2',
     //   })
     // }
   }

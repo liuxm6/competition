@@ -7,8 +7,8 @@
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle": "black"
+    "navigationBarBackgroundColor": "black",
+    "navigationBarTitleText": "谁是炼钢达人",
+    "navigationBarTextStyle": "white"
   }
 }

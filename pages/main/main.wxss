@@ -11,7 +11,7 @@
 .clolor_blue {
   color: blue;
   position: absolute;
-  left: 23rpx;
+  left: 21rpx;
   top: 15rpx;
   font-size: 32rpx;
   z-index: 1;
@@ -43,8 +43,8 @@
   position: absolute;
   z-index: 100;
   color: #1d68a1;
-  left: 6px;
-  top: 1px;
+  left: 10rpx;
+  top: 2rpx;
 }
 
 /* 如果选对 */
@@ -65,34 +65,22 @@
 }
 
 .btn_blk {
-  /* background: white; *//* border: 1px solid #f2f2f2; *//* border-radius: 5px;
-  width: 75%;*/
   line-height: 49px;
-  /* padding-left: 5px;
-  margin: 15px auto; */
   height: auto;
   color: white;
 }
 
 .btn_right {
-  /* border-radius: 5px;
-  width: 75%;*/
   line-height: 49px;
-  /* padding-left: 5px;
-  margin: 15px auto; *//* height: auto; *//* background: #a3d436; *//* border: 1px solid #a3d436; */
   color: greenyellow;
 }
 
 .btn_error {
-  /* border-radius: 5px; *//* width: 75%; */
   line-height: 49px;
-  /* padding-left: 5px;
-  margin: 15px auto; *//* height: auto; *//* background: #fe8103; *//* border: 1px solid #fe8103; */
   color: red;
 }
 
 .chk_group {
-  margin-left: 10px;
   margin-right: 10px;
   font-size: 14px;
 }
@@ -110,17 +98,13 @@
 }
 
 .chk_right {
-  /* background: #a3d436;
-  border: 1px solid #a3d436; */
   padding: 5px 5px;
   margin-top: 10px;
   display: block;
   color: #a3d436;
-  /* border-radius:5px; */
 }
 
 .chk_err {
-  /* background: #fe8103;border: 1px solid #fe8103;border-radius:5px; */
   padding: 5px 5px;
   margin-top: 10px;
   display: block;
@@ -163,8 +147,8 @@
 .btn_error radio .wx-radio-input.wx-radio-input-checked::before,
 .btn_right radio .wx-radio-input.wx-radio-input-checked::before {
   border-radius: 50%;
-  width: 50rpx;
-  height: 50rpx;
+  width: 100%;
+  height:100%;
   text-align: center;
   color: transparent; /* 对勾颜色 白色 */
   line-height: 50rpx;
@@ -202,11 +186,11 @@ checkbox .wx-checkbox-input.wx-checkbox-input-checked {
 
 checkbox .wx-checkbox-input.wx-checkbox-input-checked::before {
   border-radius: 50%; /* 圆角 */
-  width: 20rpx; /* 选中后对勾大小，不要超过背景的尺寸 */
-  height: 20rpx; /* 选中后对勾大小，不要超过背景的尺寸 */
-  line-height: 20rpx;
+  /* width: 20rpx; 选中后对勾大小，不要超过背景的尺寸 */
+  /* height: 20rpx; 选中后对勾大小，不要超过背景的尺寸 */
+  /* line-height: 20rpx; */
   text-align: center;
-  font-size: 30rpx;
+  /* font-size: 30rpx; */
   color: transparent; /* 对勾颜色 白色 */
 }
 
@@ -260,7 +244,7 @@ checkbox .wx-checkbox-input.wx-checkbox-input-checked::before {
   vertical-align: middle;
   -webkit-transform: rotate(45deg);
   position: absolute;
-  top: 34rpx;
+  top: 40rpx;
   z-index: 3;
   left: 18rpx;
 }

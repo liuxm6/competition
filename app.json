@@ -7,7 +7,7 @@
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "black",
+    "navigationBarBackgroundColor": "#000",
     "navigationBarTitleText": "谁是炼钢达人",
     "navigationBarTextStyle": "white"
   }

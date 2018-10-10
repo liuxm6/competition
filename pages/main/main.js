@@ -28,6 +28,7 @@ Page({
   },
   onLoad: function (options){
     var step = steps[options.step];
+    console.log(step);
     is_valid_click = true;
     var qs_cnt = step.limitSubjectNumber; //题目数量
     timerstamp = step.limitTime;          //限制时间
@@ -107,13 +108,6 @@ Page({
     var val = evt.detail.value;
     var curSub = this.data.curSubject;
     var isright = val == curSub.ans ? true : false;
-    if(isright){
-      //答对了
-
-    }else{
-      //答错了
-    }
-
     
     var right_cnt = isright ? this.data.right_cnt + 1 : this.data.right_cnt;
     this.setData({ ischecked: ischecked, isright: isright, right_cnt: right_cnt, rd_disabled:true });
@@ -213,7 +207,10 @@ Page({
       stdAns = stdAns.split('');//炸开数组
       stdAns.sort(function (a, b) { return (a + '').localeCompare(b + '') });
     }
-    var is_right = stdAns&&(myAns === stdAns) ? 1 :0;
+    console.log(stdAns);
+    console.log(myAns);
+    var is_right = stdAns&&(myAns.toString() === stdAns.toString()) ? 1 :0;
+    console.log(is_right);
     var right_cnt = is_right ? this.data.right_cnt + 1 : this.data.right_cnt;
     
     var rightAns = [];
@@ -243,18 +240,18 @@ Page({
     var right_cnt = this.data.right_cnt;
     var step = this.data.step;
     if (pages && pages[len-1].route.indexOf("main/main")!=-1){
-      wx.showModal({
-        title: '提示',
-        content: '总共' + qs_cnt + "题,您总共答对了" + right_cnt + "题",
-        showCancel: false,
-        success: function (res) {
+      // wx.showModal({
+      //   title: '提示',
+      //   content: '总共' + qs_cnt + "题,您总共答对了" + right_cnt + "题",
+      //   showCancel: false,
+      //   success: function (res) {
           //失败-重新挑战；成功-继续挑战
           var issuccess = right_cnt==qs_cnt?1:0;
           wx.reLaunch({
-            url: '../res/res?issuccess='+issuccess+'&step='+step,
+            url: '../res/res?issuccess=' + issuccess + '&step=' + step +'&right_cnt='+right_cnt,
           })
-        }
-      })
+      //   }
+      // })
       this.setData({
         isUnderGoing:false
       })

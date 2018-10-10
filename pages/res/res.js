@@ -1,4 +1,5 @@
 const util = require('../../utils/util.js')
+const steps = require('../../utils/steps.js')
 
 Page({
   data: {
@@ -7,16 +8,23 @@ Page({
     title_step:0,
     title_msg:'',
     rmk:'',
+    score_rmk:'',
     title_btn_msg:''
   },
   onLoad: function (options){
+    console.log(options);
+    options = {step:'p1',issuccess:0,right_cnt:5};
+    var step = steps[options.step];
+    console.log(step);
     var issuccess = isNaN(options.issuccess) ? 0 : parseInt(options.issuccess);
+    var right_cnt = isNaN(options.right_cnt)?0:parseInt(options.right_cnt);
     console.log(issuccess);
     this.setData({
       issuccess:issuccess,
       step:options.step,
-      title_msg:this.convertMsg(options.step),
-      rmk:issuccess?'恭喜你，挑战成功':'很遗憾，挑战失败',
+      title_msg:(step.title),
+      rmk: (issuccess ? '恭喜你，挑战成功' : '很遗憾，挑战失败'),
+      score_rmk: '您当前得分为' + right_cnt * step.limitSubjectScore,
       title_btn_msg: issuccess?'继续挑战':'重新挑战'
     })
   },

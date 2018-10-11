@@ -12,9 +12,9 @@
       </view>
     </view>
     
-    <view style='position:relative;margin:60rpx auto;width:150px;'>
+    <view style='position:relative;margin:60rpx auto;width:150px;' bindtap='goClick'>
         <image src='../../assets/img/btn_go.png' style='width:150px;height:80rpx;margin:0 auto;'></image>
-        <view style='position:absolute;color:white;font-size:32rpx;left:44px;line-height:80rpx;top:0rpx' bindtap='goClick'>
+        <view style='position:absolute;color:white;font-size:32rpx;left:44px;line-height:80rpx;top:0rpx' >
           <view wx-if="{{issuccess}}">继续挑战</view>
           <view wx-if="{{!issuccess}}">重新挑战</view>
         </view>

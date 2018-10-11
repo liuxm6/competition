@@ -31,7 +31,7 @@ Page({
       })
     }else{
       wx.navigateTo({
-        url: '../main/main?step=' + this.data.step,
+        url: '../index/index?step=' + this.data.step,
       })
     }
   }

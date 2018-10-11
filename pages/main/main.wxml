@@ -5,15 +5,15 @@
 
   <view>
     <view class='sub_title'>
-      <view style='position:relative;width:320rpx;margin: 0 auto;height:78rpx;color:white;display:inline-block'>
+      <view style='position:relative;width:320rpx;margin: 0 auto;height:78rpx;color:white;display:inline-block;margin-top:10rpx;'>
         <image src='../../assets/img/title.png' style='width:100%;height:inherit;'></image>
         <view style='position:absolute;top:0rpx;width:100%;left:0rpx;font-size:36rpx;line-height:78rpx'>
           <text wx-if="{{curSubject.ans.length>1}}">多选</text>
           <text wx-if="{{curSubject.ans.length==1}}">单选</text>题 {{idx}}/{{qs_cnt}}</view>
       </view>
 
-      <view class="countDownTimeView countDownAllView timer_countdown" style='display:inline-block;float:right'>
-        <view class="voteText countDownTimeText">{{countDownSecond}}</view>
+      <view class="countDownTimeView countDownAllView timer_countdown" style='display:inline-block;float:right;padding-top:36rpx;font-size:24rpx;'>
+        <view class="voteText countDownTimeText">{{countDownSecond}}s</view>
       </view>
     </view>
 

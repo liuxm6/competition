@@ -1,6 +1,6 @@
 <!--index.wxml-->
-<view class="container" style="background-image: url('../../assets/img/bg.jpg')" bindtap='goMain'>
-  <view class="ui-top" style="background-image: url('../../assets/img/ui/t@2x.png')">
+<view class="container" bindtap='goMain'>
+  <view class="ui-top">
     <view class="userinfo-grade">{{userData.grade}}</view>
     <view class="userinfo-exp">{{userData.exp.cur}}/{{userData.exp.limit}}</view>
     <view class="userinfo">
@@ -9,7 +9,7 @@
     <view class="userinfo-nickname">{{userInfo.nickName}}</view>
     <view class="userinfo-coin">{{userData.coin}}</view>
   </view>
-  <view class="ui-foot" style="background-image: url('../../assets/img/ui/b@2x.png')">
+  <view class="ui-foot">
     <view class="userinfo-strength">{{userData.strength.cur}}/{{userData.strength.limit}}</view>
   </view>
 </view>

@@ -1,44 +1,44 @@
 // 关卡
 var steps = {
-  p1:{
+  1:{
     title:'初级',              //标题
     limitTime:30,             //限时
     limitSubjectNumber:10,    //题目数量
     limitSubjectScore:10,     //每题2分
     limitScore:100,           //成功分数
-    costStrength: 10,         //花费体力
-    awardCoin:100,            //奖励金币
-    awardExp:100,             //经验
+    costStrength: 1,         //花费体力
+    awardCoin:10,            //奖励金币
+    awardExp:2,             //经验
   },
-  p2: {
+  2: {
     title: '中级',
     limitTime: 30,
     limitSubjectNumber: 10,
     limitSubjectScore: 10,
     limitScore: 100,
-    costStrength: 20,
-    awardCoin: 200,
-    awardExp: 200,
+    costStrength: 2,
+    awardCoin: 20,
+    awardExp: 4,
   },
-  p3: {
+  3: {
     title: '高级',
     limitTime: 30,
     limitSubjectNumber: 10,
     limitSubjectScore: 10,
     limitScore: 100,
-    costStrength: 30,
-    awardCoin: 300,
-    awardExp: 300,
+    costStrength: 3,
+    awardCoin: 30,
+    awardExp: 8,
   },
-  pp1: {
+  4: {
     title: '日常训练',
     limitTime: 30,
     limitSubjectNumber: 10,
     limitSubjectScore: 10,
     limitScore: 100,
     costStrength: 10,
-    awardCoin: 20,
-    awardExp: 20,
+    awardCoin: 1,
+    awardExp: 2,
   },
 };
 module.exports = steps;

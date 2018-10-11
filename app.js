@@ -35,5 +35,62 @@ App({
   },
   globalData: {
     userInfo: null
+  },
+  getUserData:function(){
+    return wx.getStorageSync('userData');
+  },
+  setUserData: function (userData) {
+    return wx.setStorageSync('userData', userData);
+  },
+  //金币提升
+  upgradeCoin: function (coin) {
+    var userData = this.getUserData();
+    userData.coin = userData.coin + coin;
+    this.setUserData(userData);
+  },
+  //关卡提升
+  upgradeStep: function (step) {
+    var userData = this.getUserData();
+    userData.grade = step;
+    this.setUserData(userData);
+  },
+  //等级提升
+  upgradeGrade: function (grade) {
+    var userData = this.getUserData();
+    userData.grade = userData.grade + grade;
+    userData.exp.limit = userData.grade*20;
+    userData.exp.cur = 0;
+    userData.strength.limit = userData.grade * 10;
+    userData.strength.cur = userData.strength.limit;
+    this.setUserData(userData);
+  },
+  //经验提升
+  upgradeExp: function(exp){
+    var userData = this.getUserData();
+    userData.exp.cur = userData.exp.cur + exp;
+    if (userData.exp.cur >= userData.exp.limit){
+      this.upgradeGrade(1);
+    }
+    else{
+      this.setUserData(userData);
+    }
+  },
+  //体力提升
+  upgradeStrength: function (sh) {
+    var userData = this.getUserData();
+    userData.strength.cur = userData.strength.cur + sh;
+    if (userData.strength.cur > userData.strength.cur.limit){
+      userData.strength.cur = userData.strength.limit;
+    }
+    this.setUserData(userData);
+  },
+  //消耗体力
+  downStrength: function (sh) {
+    var userData = this.getUserData();
+    userData.strength.cur = userData.strength.cur - sh;
+    if (userData.strength.cur < 0){
+      userData.strength.cur = 0;
+    }
+    this.setUserData(userData);
   }
 })

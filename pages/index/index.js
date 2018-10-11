@@ -2,23 +2,12 @@
 //获取应用实例
 const app = getApp()
 const util = require('../../utils/util.js')
-
+const userData = require('../../utils/userData.js')
+const steps = require('../../utils/steps.js')
 Page({
   data: {
     motto: 'Hello World',
-    userInfo: {},
-    userData: { 
-      grade:90,
-      coin:1200,
-      exp:{
-        cur:5,
-        limit:20
-      },
-      strength:{
-        cur: 5,
-        limit: 20
-      }
-    },
+    userData: app.getUserData(),
     ballTop: 0,
     ballLeft: 0,
     screenHeight: 0,
@@ -31,33 +20,38 @@ Page({
       url: '../logs/logs'
     })
   },
-  goMain:function(){
+  goStep:function(e){
+    var step = steps[e.currentTarget.dataset.step];
+    var userData = app.getUserData();
+    if (userData.strength.cur < step.costStrength){
+        return false;
+    }
+    if (parseInt(userData.step) + 1 < parseInt(e.currentTarget.dataset.step) && e.currentTarget.dataset.step!="1"){
+      return false;
+    }
+    app.downStrength(step.costStrength);
     wx.reLaunch({
-      url: '../main/main?step=p1',
+      url: '../main/main?step=' + e.currentTarget.dataset.step,
     })
   },
   onLoad: function (options) {
     var _this = this;
+    var _userData = app.getUserData();
+    if (_userData == ""){
+      app.setUserData(userData);
+      _userData = userData;
+    }
+    _this.setData({
+      userData: _userData,
+    });
     wx.getSystemInfo({
       success: function (res) {
-        // console.log(res);
         _this.setData({
           screenHeight: res.windowHeight,
           screenWidth: res.windowWidth,
         });
       }
-    })
-    wx.getUserInfo(
-      {
-        success: function (res) {
-          app.globalData.userInfo = res.userInfo
-          _this.setData({
-              userInfo: res.userInfo,
-            }
-          )
-        }
-      }
-    )
+    });
   },
   onPullDownRefresh:function(){
     console.log('222222222222');

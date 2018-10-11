@@ -1,6 +1,7 @@
 const util = require('../../utils/util.js')
 const steps = require('../../utils/steps.js')
-
+const userData = require('../../utils/userData.js')
+const app = getApp()
 Page({
   data: {
     issuccess:false,
@@ -14,7 +15,16 @@ Page({
     console.log(step);
     var issuccess = isNaN(options.issuccess) ? 0 : parseInt(options.issuccess);
     var right_cnt = isNaN(options.right_cnt)?0:parseInt(options.right_cnt);
-    console.log(issuccess);
+    var exp = right_cnt * step.awardExp;
+    var coin = right_cnt * step.awardCoin;
+    //提升经验
+    app.upgradeExp(exp);
+    //奖励金币
+    app.upgradeCoin(coin);
+    
+    if (issuccess){
+      app.upgradeStep(options.step);
+    }
     this.setData({
       issuccess:issuccess,
       step:options.step,

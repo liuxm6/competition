@@ -26,22 +26,29 @@
         <text style='color:white;font-size:36rpx;'>{{curSubject.title}}</text>
         <radio-group wx-if="{{curSubject.ans.length==1}}" class="radio-group" bindchange="radioChange">
           <view>
-            <label class='{{(ischecked!=-1)?((ischecked==index)?(isright?"btn_right":"btn_error"):((curSubject.idxAns==index)?"btn_right":"btn_blk")):"btn_blk"}}' wx:for="{{curSubject.opts}}" wx:key='index' wx:for-item='opts' style='display:block;position:relative'>
+            <label class='{{(ischecked!=-1)?((ischecked==index)?(isright?"btn_right":"btn_error"):((curSubject.idxAns==index)?"btn_right":"btn_blk")):"btn_blk"}}' wx:for="{{curSubject.opts}}" wx:key='index' wx:for-item='opts' style='display:block;position:relative;display:flex;margin:30rpx 0;'>
               <!-- 没选的话，默认显示ABCD,选对了，绿色，字母消失；选错了，红色，字母消失，未选的正确答案颜色变绿; -->
               <text class='brand_def {{(ischecked!=-1)?((ischecked==index)?"brand_none":((curSubject.idxAns==index)?"brand_right":"brand_none")):"brand_def"}}' style='' wx-if="{{index==0}}">A</text>
               <text class='brand_def {{(ischecked!=-1)?((ischecked==index)?"brand_none":((curSubject.idxAns==index)?"brand_right":"brand_none")):"brand_def"}}' style='' wx-if="{{index==1}}">B</text>
               <text class='brand_def {{(ischecked!=-1)?((ischecked==index)?"brand_none":((curSubject.idxAns==index)?"brand_right":"brand_none")):"brand_def"}}' style='' wx-if="{{index==2}}">C</text>
               <text class='brand_def {{(ischecked!=-1)?((ischecked==index)?"brand_none":((curSubject.idxAns==index)?"brand_right":"brand_none")):"brand_def"}}' style='' wx-if="{{index==3}}">D</text>
-              <radio value="{{opts.value}}" checked="{{opts.checked}}" disabled="{{rd_disabled}}" />{{opts.title}}
+              <view style='width:10%;'>
+                <radio value="{{opts.value}}" checked="{{opts.checked}}" disabled="{{rd_disabled}}" />
+              </view>
+              <view style='width:90%;'> {{opts.title}}</view>
             </label>
           </view>
         </radio-group>
         <checkbox-group class="chk_group" bindchange="checkboxChange" wx-if="{{curSubject.ans.length>1}}">
-          <label style="position:relative;font-size:36rpx;" class="checkbox" wx:for='{{ curSubject.opts }}' wx:key='index' wx:for-item='opts' class='{{(rightAnsList[index].isright)?"chk_right":((rightAnsList[index].ischecked==1)?"chk_err":"chk_blk")}}'>
-            <text class='{{(rightAnsList[index].isright)?"right":((rightAnsList[index].ischecked==1)?"error":"")}}'></text>
+          <label style="position:relative;font-size:36rpx;display:flex;" class="checkbox" wx:for='{{ curSubject.opts }}' wx:key='index' wx:for-item='opts' class='{{(rightAnsList[index].isright)?"chk_right":((rightAnsList[index].ischecked==1)?"chk_err":"chk_blk")}}'>
+            <text class='{{(rightAnsList[index].isright&&rightAnsList[index].ischecked==1)?"right":((rightAnsList[index].ischecked==1)?"error":"")}}'></text>
             <text class='clolor_blue {{(rightAnsList[index].isright)?"color_green":((rightAnsList[index].ischecked==1)?"color_red":"")}}'>{{opts.options}}</text>
-            <checkbox value="{{opts.value}}" checked="{{opts.checked}}" />
-            <text class='color_white  {{(rightAnsList[index].isright)?"color_green":((rightAnsList[index].ischecked==1)?"color_red":"")}}'>{{opts.title}}</text>
+            <view style='width:10%;'>
+              <checkbox value="{{opts.value}}" checked="{{opts.checked}}" />
+            </view>
+            <view style='width:90%'>
+              <text class='color_white  {{(rightAnsList[index].isright)?"color_green":((rightAnsList[index].ischecked==1)?"color_red":"")}}'>{{opts.title}}</text>
+            </view>
           </label>
         </checkbox-group>
       </view>

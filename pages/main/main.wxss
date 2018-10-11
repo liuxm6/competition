@@ -5,18 +5,20 @@
 }
 
 .color_green {
-  color: greenyellow !important;
+  color: greenyellow;
 }
 
 .clolor_blue {
-  color: blue;
+  color: #1d68a1;
   position: absolute;
   left: 23rpx;
   top: 15rpx;
   font-size: 32rpx;
   z-index: 1;
 }
-
+.clolor_blue.color_green{
+  color:greenyellow;
+}
 .color_red {
   color: red !important;
   position: absolute;
@@ -65,18 +67,18 @@
 }
 
 .btn_blk {
-  line-height: 49px;
+  /* line-height: 49px; */
   height: auto;
   color: white;
 }
 
 .btn_right {
-  line-height: 49px;
+  /* line-height: 49px; */
   color: greenyellow;
 }
 
 .btn_error {
-  line-height: 49px;
+  /* line-height: 49px; */
   color: red;
 }
 
@@ -152,7 +154,7 @@
   text-align: center;
   color: transparent; /* 对勾颜色 白色 */
   line-height: 50rpx;
-  margin-left: 1px;
+  /* margin-left: 1px; */
   transform: translate(-50%, -50%) scale(1);
   -webkit-transform: translate(-50%, -50%) scale(1);
 }
@@ -215,7 +217,7 @@ checkbox .wx-checkbox-input.wx-checkbox-input-checked::before {
   transform: rotate(45deg);
   display: inline-block;
   z-index: 2;
-  left: 17rpx;
+  left: 20rpx;
   top: 34rpx;
   color: red;
 }

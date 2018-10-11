@@ -243,7 +243,7 @@ checkbox .wx-checkbox-input.wx-checkbox-input-checked::before {
 
 .right {
   display: inline-block;
-  width: 8rpx;
+  width: 14rpx;
   height: 4rpx;
   background: #fff;
   line-height: 0;
@@ -264,4 +264,3 @@ checkbox .wx-checkbox-input.wx-checkbox-input-checked::before {
   background: #fff;
   -webkit-transform: rotate(-90deg) translateY(-50%) translateX(50%);
 }
-

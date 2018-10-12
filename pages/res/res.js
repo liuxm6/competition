@@ -28,7 +28,7 @@ Page({
       issuccess:issuccess,
       step:options.step,
       stepObj:step,
-      score_rmk: '得分' + right_cnt * step.limitSubjectScore + '得金币' + coin
+      score_rmk: '得分' + right_cnt * step.limitSubjectScore + '  得金币' + coin
     })
   },
   goClick:function(){

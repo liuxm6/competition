@@ -6,7 +6,7 @@ let watch;
 var interval;
 var ans_interval;
 var is_valid_click = true;
-var timerstamp = 10;
+var timerstamp = 30;
 
 
 Page({
@@ -207,10 +207,10 @@ Page({
       stdAns = stdAns.split('');//炸开数组
       stdAns.sort(function (a, b) { return (a + '').localeCompare(b + '') });
     }
-    console.log(stdAns);
-    console.log(myAns);
+    // console.log(stdAns);
+    // console.log(myAns);
     var is_right = stdAns&&(myAns.toString() === stdAns.toString()) ? 1 :0;
-    console.log(is_right);
+    // console.log(is_right);
     var right_cnt = is_right ? this.data.right_cnt + 1 : this.data.right_cnt;
     
     var rightAns = [];

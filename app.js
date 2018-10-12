@@ -51,7 +51,10 @@ App({
   //关卡提升
   upgradeStep: function (step) {
     var userData = this.getUserData();
-    userData.step = step;
+    //如果要跳转的step比当前step低，不跳转
+    if(step>userData.step){
+      userData.step = step;
+    }
     this.setUserData(userData);
   },
   //等级提升

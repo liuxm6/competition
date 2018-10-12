@@ -12,7 +12,7 @@
           <text wx-if="{{curSubject.ans.length==1}}">单选</text>题 {{idx}}/{{qs_cnt}}</view>
       </view>
 
-      <view class="countDownTimeView countDownAllView timer_countdown" style='display:inline-block;position:absolute;right:0;top:80rpx;padding-top:36rpx;font-size:24rpx;'>
+      <view class="countDownTimeView countDownAllView timer_countdown" style='display:inline-block;position:absolute;right:18rpx;top:80rpx;padding-top:36rpx;font-size:24rpx;'>
         <view class="voteText countDownTimeText">{{countDownSecond}}s</view>
       </view>
     </view>

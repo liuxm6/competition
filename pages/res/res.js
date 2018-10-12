@@ -12,7 +12,7 @@ Page({
   },
   onLoad: function (options){
     var step = steps[options.step];
-    console.log(step);
+   
     var issuccess = isNaN(options.issuccess) ? 0 : parseInt(options.issuccess);
     var right_cnt = isNaN(options.right_cnt)?0:parseInt(options.right_cnt);
     var exp = right_cnt * step.awardExp;
@@ -21,8 +21,7 @@ Page({
     app.upgradeExp(exp);
     //奖励金币
     app.upgradeCoin(coin);
-    
-    if (issuccess){
+    if (issuccess==1){
       app.upgradeStep(options.step);
     }
     this.setData({

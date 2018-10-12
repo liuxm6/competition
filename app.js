@@ -51,7 +51,7 @@ App({
   //关卡提升
   upgradeStep: function (step) {
     var userData = this.getUserData();
-    userData.grade = step;
+    userData.step = step;
     this.setUserData(userData);
   },
   //等级提升
